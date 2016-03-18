@@ -1,2 +1,2 @@
-# CATIA
-This repository contains CATIA catvba sample
+# MFG
+This repository contains Machining CATIA catvba sample 
