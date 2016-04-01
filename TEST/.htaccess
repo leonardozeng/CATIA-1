@@ -1,0 +1,290 @@
+# ----------------------------------------------------------------------
+# | Cross-origin images |
+# ----------------------------------------------------------------------
+# Send the CORS header for images when browsers request it.
+<IfModule mod_setenvif.c>
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(bmp|cur|gif|ico|jpe?g|png|svgz?|webp)$">
+            SetEnvIf Origin ":" IS_CORS
+            Header set Access-Control-Allow-Origin "*" env=IS_CORS
+        </FilesMatch>
+    </IfModule>
+</IfModule>
+# ----------------------------------------------------------------------
+# | Cross-origin web fonts |
+# ----------------------------------------------------------------------
+# Allow cross-origin access to web fonts.
+<IfModule mod_headers.c>
+    <FilesMatch "\.(eot|otf|tt[cf]|woff2?)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+# ----------------------------------------------------------------------
+# | Document modes |
+# ----------------------------------------------------------------------
+# Force Internet Explorer 8/9/10 to render pages in the highest mode
+# available in the various cases when it may not.
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=edge"
+  # `mod_headers` cannot match based on the content-type, however,
+  # the `X-UA-Compatible` response header should be send only for
+  # HTML documents and not for the other resources.
+  <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|woff2?|xloc|xml|xpi)$">
+    Header unset X-UA-Compatible
+  </FilesMatch>
+  # ----------------------------------------------------------------------
+  # | File access |
+  # ----------------------------------------------------------------------
+  # Block access to directories without a default document.
+  <IfModule mod_autoindex.c>
+    Options -Indexes
+  </IfModule>
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # Block access to files that can expose sensitive information.
+  #
+  <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
+    # Apache < 2.3
+    <IfModule !mod_authz_core.c>
+      Order allow,deny
+      Deny from all
+      Satisfy All
+    </IfModule>
+    # Apache ≥ 2.3
+    <IfModule mod_authz_core.c>
+      Require all denied
+    </IfModule>
+  </FilesMatch>
+</IfModule>
+# ----------------------------------------------------------------------
+# | Rewrite engine |
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    # (1)
+    RewriteEngine On
+    # (2)
+    # Options +FollowSymlinks
+    # (3)
+    # Options +SymLinksIfOwnerMatch
+    # (4)
+    # RewriteBase /
+    # (5)
+    # RewriteOptions <options>
+    # (6)
+</IfModule>
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+</IfModule>
+# ----------------------------------------------------------------------
+# | Expires headers                                                    |
+# ----------------------------------------------------------------------
+# BEGIN Expire headers
+<IfModule mod_expires.c>
+  ExpiresActive on
+      ExpiresDefault                                      "access plus 1 month"
+    # CSS
+      ExpiresByType text/css                              "access plus 1 year"
+    # Data interchange
+      ExpiresByType application/atom+xml                  "access plus 1 hour"
+      ExpiresByType application/rdf+xml                   "access plus 1 hour"
+      ExpiresByType application/rss+xml                   "access plus 1 hour"
+      ExpiresByType application/json                      "access plus 0 seconds"
+      ExpiresByType application/ld+json                   "access plus 0 seconds"
+      ExpiresByType application/schema+json               "access plus 0 seconds"
+      ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+      ExpiresByType application/xml                       "access plus 0 seconds"
+      ExpiresByType text/xml                              "access plus 0 seconds"
+    # Favicon (cannot be renamed!) and cursor images
+      ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+      ExpiresByType image/x-icon                          "access plus 1 week"
+    # HTML
+      ExpiresByType text/html                             "access plus 0 seconds"
+    # JavaScript
+      ExpiresByType application/javascript                "access plus 1 year"
+      ExpiresByType application/x-javascript              "access plus 1 year"
+      ExpiresByType text/javascript                       "access plus 1 year"
+    # Manifest files
+      ExpiresByType application/manifest+json             "access plus 1 year"
+      ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+      ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+    # Media files
+      ExpiresByType audio/ogg                             "access plus 1 month"
+      ExpiresByType image/bmp                             "access plus 1 month"
+      ExpiresByType image/gif                             "access plus 1 month"
+      ExpiresByType image/jpeg                            "access plus 1 month"
+      ExpiresByType image/png                             "access plus 1 month"
+      ExpiresByType image/svg+xml                         "access plus 1 month"
+      ExpiresByType image/webp                            "access plus 1 month"
+      ExpiresByType video/mp4                             "access plus 1 month"
+      ExpiresByType video/ogg                             "access plus 1 month"
+      ExpiresByType video/webm                            "access plus 1 month"
+    # Web fonts
+      # Embedded OpenType (EOT)
+      ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+      ExpiresByType font/eot                              "access plus 1 month"
+      # OpenType
+      ExpiresByType font/opentype                         "access plus 1 month"
+      # TrueType
+      ExpiresByType application/x-font-ttf                "access plus 1 month"
+      # Web Open Font Format (WOFF) 1.0
+      ExpiresByType application/font-woff                 "access plus 1 month"
+      ExpiresByType application/x-font-woff               "access plus 1 month"
+      ExpiresByType font/woff                             "access plus 1 month"
+      # Web Open Font Format (WOFF) 2.0
+      ExpiresByType application/font-woff2                "access plus 1 month"
+    # Other
+      ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+</IfModule>
+# END Expire headers
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+  <FilesMatch "\\.(ico|jpe?g|png|gif|swf|gz)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+  <FilesMatch "\\.(css)$">
+    Header set Cache-Control "max-age=604800, public"
+  </FilesMatch>
+  <FilesMatch "\\.(js)$">
+    Header set Cache-Control "max-age=2592000, private"
+  </FilesMatch>
+  <FilesMatch "\\.(x?html?)$">
+    Header set Cache-Control "max-age=604800, public"
+    #Header set Pragma "cache"
+  </FilesMatch>
+  <FilesMatch "\.(php)$">
+    #Header set Cache-Control "max-age=600, private, must-revalidate"
+    Header unset Cache-Control
+    #Header set Pragma "no-cache"
+  </FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+# BEGIN Turn ETags Off
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+	FileETag None
+# END Turn ETags Off
+# <IfModule mod_headers.c>
+# BEGIN Remove Last-Modified Header
+# Header unset Last-Modified
+# </IfModule>
+# END Remove Last-Modified Header
+# BEGIN Compress text files
+<IfModule mod_deflate.c>
+	#DeflateCompressionLevel 1
+  <FilesMatch "\.(css|js|x?html?|php)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+	AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+	# Properly handle old browsers that do not support compression
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+	# Explicitly exclude binary files from compression just in case
+	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png|pdf|swf|ico|zip)$ no-gzip
+  # Below uses mod_deflate to compress text files. Never compress binary files.
+	<IfModule mod_headers.c>
+	# Make sure proxies don't deliver the wrong content
+    	Header append Vary User-Agent env=!dont-vary
+	# set cache control to private to ignore proxies and avoid edge cases
+		Header append Cache-Control "private"
+	# Remove the vary header for MSIE
+		BrowserMatch "MSIE" force-no-vary
+	</IfModule>
+</IfModule>
+# ----------------------------------------------------------------------
+# | Reducing MIME type security risks |
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+# END Compress text files
+###### Config Global
+# ----------------------------------------------------------------------
+# | Character encodings                                                |
+# ----------------------------------------------------------------------
+AddDefaultCharset utf-8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# Serve the following file types with the media type `charset`
+# parameter set to `UTF-8`.
+<IfModule mod_mime.c>
+    AddCharset utf-8 .atom \
+                     .bbaw \
+                     .css \
+                     .geojson \
+                     .js \
+                     .json \
+                     .jsonld \
+                     .rdf \
+                     .rss \
+                     .topojson \
+                     .vtt \
+                     .webapp \
+                     .xloc \
+                     .xml
+</IfModule>
+<IfModule mod_php5.c>
+############################################
+## adjust memory limit
+    #php_value memory_limit 128M
+    #php_value max_execution_time 18000
+############################################
+## disable magic quotes for php request vars
+    #php_flag magic_quotes_gpc off
+############################################
+## disable automatic session start
+## before autoload was initialized
+    #php_flag session.auto_start off
+###########################################
+# disable user agent verification to not break multiple image upload
+    #php_flag suhosin.session.cryptua off
+###########################################
+# turn off compatibility with PHP4 when dealing with objects 
+    #php_flag zend.ze1_compatibility_mode Off
+</IfModule>
+## default index file
+    DirectoryIndex index.php
+#RewriteCond %{HTTP_HOST} ^localhost
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+# ----------------------------------------------------------------------
+# | REWRITE
+# ----------------------------------------------------------------------
+##################### Public ##########################
+RewriteCond %{REQUEST_URI} !^/(var|faq)
+RewriteRule ^([a-zA-Z]{1,3})/(.*) 											/$2?strLangue=$1		[QSA,L]
+RewriteRule ^(?:actualites|news|nieuws)/{0,1}$   /news.php				[QSA,L]
+RewriteRule ^(?:actualites|news|nieuws)[/]page[/]([/0-9]+)/{0,1}$   /news.php?page=$1				[QSA,L]
+RewriteRule ^(?:actualites|news|nieuws)/(\d{4}/\d{2}/\d{2})/([-._0-9a-zA-Z]+)/([-_0-9a-zA-Z]+)/?$	/news.php?getdate=$1&uri_get_news=$2&getnews=$3 [QSA,L]
+RewriteRule ^(?:actualites|news|nieuws)/tag/([-+_0-9a-zA-Z]+)/{0,1}$   /news.php?tag=$1				[QSA,L]
+RewriteRule ^(?:pages)/([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]{0,1}$        /cms.php?getidpage=$1&geturi_page=$2             [QSA,L]
+RewriteRule ^(?:pages)/([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)/{0,1}$        /cms.php?getidpage_p=$1&geturi_page_p=$2&getidpage=$3&geturi_page=$4             [QSA,L]
+RewriteRule ^(?:catalogue|catalog)/{0,1}$     											/catalog.php									[QSA,L]
+RewriteRule ^(?:catalogue|catalog)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)/{0,1}$     			/catalog.php?idclc=$1&pathclibelle=$2			[QSA,L]
+RewriteRule ^(?:catalogue|catalog)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)/{0,1}$     				/catalog.php?idclc=$1&pathclibelle=$2&idcls=$3&pathslibelle=$4		[QSA,L]
+RewriteRule ^(?:catalogue|catalog)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)[-]([/0-9]+)/{0,1}$     	/catalog.php?idclc=$1&pathclibelle=$2&urlcatalog=$3&idproduct=$4		[QSA,L]
+RewriteRule ^(?:catalogue|catalog)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]([/0-9]+)[-]([-_0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)[-]([/0-9]+)/{0,1}$     	/catalog.php?idclc=$1&pathclibelle=$2&idcls=$3&pathslibelle=$4&urlcatalog=$5&idproduct=$6		[QSA,L]
+############################ Plugins ###############################
+#RewriteRule ^(admin)/ - [L]
+RewriteCond %{REQUEST_URI} !^/(admin|install)
+RewriteRule ^([0-9a-zA-Z]+)/{0,1}$     	/plugins.php?magixmod=$1		[QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/]([0-9]+)/{0,1}$ /plugins.php?magixmod=$1&page=$2 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/](?:sort)[/]([a-zA-Z]+)/{0,1}$ /plugins.php?magixmod=$1&sort=$2 [QSA,L]
+##### Additionnal params #####
+RewriteRule ^([0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)/{0,1}$ /plugins.php?magixmod=$1&pstring1 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)/{0,1}$ /plugins.php?magixmod=$1&pstring1=$2&pstring2=$3 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)/{0,1}$ /plugins.php?magixmod=$1&pstring1=$2&pnum1=$3 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/](\d{4}/\d{2}/\d{2})[/]([-_0-9a-zA-Z]+)-([0-9]+)/{0,1}$ /plugins.php?magixmod=$1&pdate=$2&pstring1=$3&pnum1=$4 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)/{0,1}$ /plugins.php?magixmod=$1&pstring1=$2&pnum1=$3&pstring2=$4&pnum2=$5 [QSA,L]
+RewriteRule ^([0-9a-zA-Z]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)[/]([-_0-9a-zA-Z]+)-([0-9]+)/{0,1}$ /plugins.php?magixmod=$1&pstring1=$2&pnum1=$3&pstring2=$4&pnum2=$5&pstring3=$6&pnum3=$7 [QSA,L]

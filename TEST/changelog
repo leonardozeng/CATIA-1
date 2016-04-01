@@ -1,0 +1,1650 @@
+#### 2.6.5
+Stable
+
+* Fix galery design & less
+* New structure API catalog model & catalog sql (frontend)
+    * Add sort params in widget_catalog_data
+* Add microdata in catalog
+* Fix loop catalog + effect (frontend)
+* Change sidebar (frontend)
+* Upgrade tinymce 4.2.5 => 4.3.2
+* Fix bug About plugin with lowercase for tpl files
+* Update news skin (index, loop) + Add microdata
+* Breadcrumb icon option (frontend)
+* Fix loop news + tags
+* Fix Affix logo + header
+* Redesign Footer default custom
+    * Add section Footer
+* Add facebook block footer (frontend)
+* Add context "mix" in CMS page
+* Add s_page_all in db CMS page
+* Add share for mobile (footbar)
+* Add quickAccess in breadcrumb (skin)
+* Update info for content_css in editor (backend)
+* Add lang dropdown (skin frontend)
+* Add tabs,tabs-arrow header.tpl (skin frontend)
+* Upgrade jquery 1.11.1 => 1.12.0
+* Upgrade jquery ui 1.10.3 => 1.10.4
+* Add sortable for image galery (backend + frontend)
+    * Sort image galery by img_order
+    * Add sql for img_order + upgrade sql 2.6.0 => 2.6.5
+* Fix bug extend_valid_elements (backend)
+* Update img size configuration (default)
+* Add about dynamic page
+* Add general microdata
+* Fix bug library (root)
+* Fix bug utf-8 on About plugin (contact.tpl)
+* Update youtube tinymce 1.0.1 => 1.1.0
+* Change in global less (skin default)
+* Add global library (magixcjquery & smarty)
+* Add About plugin
+
+#### 2.6.1
+Stable
+* Add product listing with select & exclude
+* change class name effect (product)
+* Readme change url logo
+* Fix #127 $allowed return false
+* Upgrade tinymce 4.2.3 => 4.2.5
+* Upgrade Center Column (skin)
+* Change structure for less skin (default)
+* Add Font Awesome plugin in tinymce
+* Fix bug with goliath effect
+* Fix bug ming effect
+* Add block google font (skin)
+
+#### 2.6.0
+Stable
+* Fix Upgrade menu (install/upgrade)
+* Fix remove uppercase sidebar (admin)
+* Add new structure less
+* Add block good choice (skin)
+    * Add menu.less (dropdown menu skin)
+    * Add block.less (skin)
+* Add new effect in .less (skin)
+    * Add new loop condition for effect
+* Upgrade Center column 2.0 => 3.0 (skin)
+* Add new responsive utilities (skin)
+    * Add toolbar tpl (skin)
+    * Add new primary menu (skin)
+* Fix bug youtube url
+* Add font awesome in skin (default)
+* Add embed responsive in tinyMCE
+* Start new design for Admin
+* Add new less files (body, sidebar,footer)
+* Fix syntax lang files tinymce
+
+#### 2.5.3
+* Add new less customize (body,footer)
+* Upgrade bootstrap 3.3.0 => 3.3.4 (skin)
+* Add Center Columns less
+    * Add news effect in effect.less
+    * Fix new html structure with effect
+* Add effect.less for custom media
+* Add exclude and select in last-product-cat
+* Add new widget lang data
+* Add new widget share data
+* Fix bug widget static meta with use configvar
+* Fix bug responsive admin
+* Upgrade responsivefilemanager 9.9.2
+* Upgrade tinymce 4.1.6 => 4.1.9
+* Fix #125 order category in product
+* Change permission on plugin contact
+* Fix bug duplicate product + images + galery
+* Htaccess HBP5 adaptation
+* Add open graph + twitter meta protocol
+
+#### 2.5.2
+Stable
+    * Change : redefined title attribute (loop) - frontend
+    * Fix Bug jsSnippet URL (windows)
+    * Upgrade responsivefilemanager 9.7.1 => 9.8.0
+    * Ajout des données de plugin dédié dans les actualités (news)
+    * Upgrade Swift Mailer 5.0.0 => 5.2.1
+    * Upgrade responsivefilemanager 9.7.1
+    * Fix #119 exclusion dans les news
+    * Clean google tools widget
+    * Upgrade analytics ga => analytics universal
+    * Add access message
+    * Fix meta default root catalog
+    * Fix limit catégorie et sous catégorie (sql)
+    * Fix #120 surcharge catégorie et sous catégorie
+    * file manager convert all spaces on files
+    * Add notify in clearcache plugin
+    * Fix notify in contact plugin
+    * Fix notify in access (backend)
+    * Add new system notify in full backend
+    * Add new system notify in catalog, pages, config
+    * Fix bug remove category catalog (backend)
+    * Upgrade font awesome 4.1.0 => 4.2.0
+    * Fix bug input search icon position (backend)
+    * Fix input metas home (backend)
+    * Clean and new structure plugin contact
+    * Remove advanced button bootstrap (backend)
+    * Model message system  (getNotify)
+    * Upgrade tinymce 4.1.3 => 4.1.6
+    * Upgrade bootstrap 3.1.1 => 3.3.0
+    * Fix #117 tabs news plugin
+    * Fix #118 bug in plugins tinymce for magixcms
+    * Fix bug theming data-src (backend)
+    * Ajout du système de message pré formaté (backend)
+    * Upgrade jquery, jquery validation, jquery form
+    * Replace modernizr 2.7.1 => 2.8.1
+    * Fix bug replace old key pseudo employee (backend)
+    * Fix bug escape content update cms (backend)
+
+#### 2.5.1
+Stable
+    * Add widget data in home, news sidebar
+    * Add example widget data catalog gallery
+    * Add example widget catalog data subcategory
+        * Add example widget catalog data product
+    * Add example used widget data news & data category
+        * Add css defined news-list and product-list
+    * Change order_clause catalog s_product (fronted)
+        * Add last-product loop with widget data catalog
+        * Add tags loop with widget data news
+        * Add last-news loop with widget data news
+        * Add category loop with widget data catalog
+    * Upgrade tinyMCE 4.0.21 => 4.0.25
+    * Fix #115 Boucle des catégories dans la sidebar incorrect
+    * Fix #114 Refresh des pages CMS incorrect
+    * Fix bug drop old table (upgrade)
+
+#### 2.5.0
+Stable
+    * Upgrade bootstrap Bootstrap 3.1.0 => 3.1.1 in install
+    * Upgrade tinyMCE 4.0.16 => 4.0.21
+    * Fix bug rss (request list news)
+    * Work #84 update access news, catalog, home (backend)
+    * Work #84 access add list news, catalog, home (backend)
+    * Upgrade Bootstrap 3.1.0 => 3.1.1 (frontend & backend)
+
+Beta
+    * Work #84 access add list cms, home (backend)
+    * Edit transfertProfil for upgrade 2.5.0
+    * Add checkAll in role/access
+    * Fix #65 user data - firstname and lastname (backend)
+    * Work Add params sort in widget data (catalog - frontend)
+    * Fix #112 Erreur URL de modification des traductions de plugins
+    * Fix #111 Encodage des prix dans le catalogue
+    * Fix #84 Status et permissions utilisateurs
+
+#### 2.4.3
+    * Fix bug chargement du contenu dans tinyMCE (add escape in backend)
+    * Fix #102 Range format tinyMCE
+    
+#### 2.4.2
+    * Add variable transliteration filemanager config
+    * Fix bug translate internal plugin tinyMCE
+    * Fix #108 Chemin des images produits incorrect dans le sitemap images
+    * Upgrade Responsive FileManager 9.2.1 => 9.3.2
+    * Formatage du mail avec smarty (plugin contact)
+    * Mise a jour du plugin contact (templating mail)
+    * Ajout de la traduction FR pour la mise a jour d'un plugin
+    * Note bug minify (apache)
+    * Upgrade bootstrap 3.0.2 => 3.0.3
+    * Upgrade Font Awesome 3.1.0 => 4.0.3
+        * Change path for Font Awesome (backend & install)
+        * Add Font Awesome Less (backend & install)
+        * Adapt JS and tpl with Font Awesome (backend & install)
+    * Change pagination process news (backend)
+    * Fix #107 remove round
+    * Système de plugin dédié aux actualités
+        * Modifications du skin news pour les plugins (backend)
+        * Modifications de la classe news pour les plugins (backend)
+    * Nouvelle structure plugin contact
+        * Système de notification pour le plugin contact
+        * Fix bug getConfigVars (Frontend)
+    * Mise a jour de tinyMCE 4.0.10 => 4.0.12
+        * Upgrade Morris.js
+        * Upgrade Raphael.js
+    * Fix widget cms display (classes CSS)
+    * Fix #105 Ajout des Widgets de tableaux de données
+    * Fix #104 Bug affichage des produits dans une sous catégorie
+    * Fix #103 BO: Edition de produit : affichage/encodage prix du produit
+
+#### 2.4.1
+    * Add Less Bootstrap in install
+    * Fix #99 edit content sub category backend
+    * Fix #98 select menu sub category
+    * Fix #97 Add Less Bootstrap in backend
+    * Restructure javascript backend
+    * Work #96 : Magix cms style in tinyMCE 4
+    * Fix bug empty json in catalog
+    * add class "img-float" (skin default)
+
+#### 2.4.0
+Stable
+    * Upgrade responsivefilemanager 9.1.4 => 9.2.1
+    * Add icon responsivefilemanager in tinyMCE
+    * Add select langue Admin
+    * Upgrade tinyMCE 4.0.9 => 4.0.10
+RC5
+    * Add Button loremipsum tinyMCE
+    * Fix bug structure galery (admin)
+    * Upgrade tinyMCE 4.0.6 => 4.0.8
+        * Adapted plugin mc_catalog for tinyMCE 4.0.6
+        * Adapted plugin mc_pages for tinyMCE 4.0.6
+        * Adapted plugin mc_news for tinyMCE 4.0.6
+        * Upgrade jQuery 1.10.2
+        * Add HTML5shiv
+        * Add CSS for tinyMCE 4.0.6
+    * view: skin/default/widget - remove useless class
+    * some personal tricks I did when bootstrap 3 was still in beta - no problem anymore with final version
+    * view: skin/default | massive refactoring && improvement
+        * bootstrap V3
+        * include bootstrap less files for more fun
+        * using smarty template {extend} method
+        * other stuff
+    * Fix bug load plugin mc_catalog in tinyMCE (jquery forms version)
+        * Add default ORDER category catalog (backend)
+    * Modification de la disposition des langues (lang-group)
+    * Suppression de la balise "base" tag issue with ie7
+    * Mise à jour de respond.js (prise en charge de la balise main)
+    * Fix bug affichage des messages de validation (backend)
+    * Fix bug déplacement d'une page CMS (backend)
+    * Upgrade minify backend (2.1.7)
+    * Upgrade minify frontend (2.1.7)
+RC4
+    * Mise en place des tailles sm de bootstrap + définition des tailles classique (backend)
+    * Upgrade jQuery form et jquery validate
+    * Fix #92 Utilisation du système de modèle
+    * Work #91 template - extension de fichiers
+        * skin backend rename *.phtml to .tpl
+        * app/frontend*: edit extension on display() call
+        * plugin/contact/admin: edit extension on display() call
+        * plugin/contact/skin.admin: rename *.phtml to .tpl
+        * plugin/clearcache/admin: edit extension on display() call
+        * plugin/clearcache/skin.admin: rename *.phtml to .tpl
+        * plugin/translation/admin: edit extension on display() call
+        * plugin/translation/skin.admin: rename *.phtml to .tpl
+    * Fix #88 Update Bootstrap 2.3.4 => 3 (backend)
+        * Upgrade Bootstrap 2.3.4 => 3.0.0
+        * Adaptation des fichiers du template admin
+    * Fix #90 Bug Liaison produits
+    * Fix #89 Bug ajout page cms enfant
+    * Work #91 - Frontend file extension revision .phtml -> .tpl
+        * skin/default: rename *.phtml to .tpl
+        * app/frontend*: edit extension on display() call
+        * plugin/contact/public: edit extension on display() call
+        * plugin/contact/skin.public: rename *.phtml to .tpl
+    * Update constructor pagination - bootstrap 3 compatibility
+        * Minor change for bootstrap 3 compatibility
+    * Work #68 Modification de l'API des plugins destinés aux modules natif
+    * Mise à jour de la librairie jimagine (ajout de jmSoundCloud)
+    * Upgrade jQuery UI 1.10.1 => 1.10.3 (backend)
+    * Should fix issue #87
+RC3
+    * fix for #86 to check
+    * Fix #68 Plugins dédiés au catalogue (API Beta)
+        * Modification du nom d'un plugin avec la fonction setConfig
+        * Ajout de la traduction anglophone du plugin validate
+    * Fix #85 Requête SQL sitemap catégorie catalogue
+    * Fix #82 Rafraichissement des catégories du catalogue après insertion
+    * Désactive les liens avec le dièse dans l'administration
+    * Fix bug Nom de dossier incorrect traduction SEO
+    * Modification des informations de licence du plugin contact
+    * Modification du config.xml du plugin translation
+
+RC2
+    * Fix #81 Problème plugin translation core
+    * Fix #80 Suppression sous-catégorie
+    * :widget - share_display - minor bug fix
+    * Ajout de la classe view-bloc et collapse-block
+    * Balisage de traduction du plugin clearcache
+    * Fix #72 Template admin product, category, subcategory, CMS
+    * Fix bug ajout d'adresse mail dans le plugin contact
+    * Works #68 Plugins dédiés au catalogue (produit)
+    * Upgrade de jmMap de jimagine
+    * Modification des fichiers request (admin)
+    * plugin - contact - minor improvement
+
+RC1
+    * Fix #67 Traduction FR Administration
+    * Fix #79 Traduction FR installation
+    * Fix #75 Traduction FR des messages dans javascript
+    * Modification de l'url post pour le plugin contact (frontend)
+    * upgrade swiftmailer 4.3.0 => 5.0.0
+    * Ajout de commentaire dans la class imagesize
+    * Suppression de la class blockDom
+    * Modification de la structure des traductions admin
+
+Beta 4
+    * Works #67 Traduction FR Administration (request)
+    * Works #79 Traduction FR auto installation
+    * Works #75 Traduction FR des messages dans javascript (install)
+    * Works #75 Traduction FR des messages dans javascript (catalog)
+    * Works #67 Traduction FR Administration (cache)
+        * Fix icon jsonHome for empty table
+    * Works #67 Traduction FR Administration (catalog)
+        * Traduction catégories
+        * Traduction sous catégories
+        * Traduction produits
+    * TinyMCE advanced styles (fancybox)
+    * Works #67 Traduction FR Administration (global)
+    * Works #75 Traduction du module Utilisateurs (googletools,config,catalog)
+    * Upgrade de Font Awesome 3.0.2 => 3.1.0
+    * Fix bug Sitemap ping (fichier request inexistant)
+    * :global - model_db - minor improvement scope
+    * Works #72 Template admin product, category, subcategory, CMS
+    * Works #67 Traduction du module Utilisateurs (CMS, News)
+    * Fix #77 Erreur date url dans setItemData (frontend_model_news)
+    * Traduction du module SEO (Works #75, #67)
+        * Ajout de la suppression des langues (backend)
+        * Ajout de commentaire dans mc_config.js
+        * Fix paramètres removeImage mc_news.js
+    * Works #75 Traduction FR des messages dans javascript (fix cms)
+    * Works #75 Traduction FR des messages dans javascript (fix news,home)
+    * Fix #74 bug (pas de traduction) système de traduction plugins
+        * Ajout de l'API setConfig dans clearcache
+    * :global / constructor / add method
+    * Fix #71 bug Sidebar admin (construction menu plugin)
+    * Ajout de la reecriture du lien vers le dossier admin dans le javascript
+        * Réaménagement de quelques liens dans la navigation horizontal
+        * Fix #74 Amélioration du système de traduction plugins
+        * Optimisation du chargement des fichiers javascripts
+        * Work #75 Traduction FR des messages dans javascript
+    * Fix #74 Système de traduction plugins
+    * Works #67 Traduction FR Administration (sitemap)
+    * Works API plugin info (about) - premier test avec des tabs
+    * Works #71 Sidebar admin (modification API sidebar plugin)
+    * Works #67 Traduction FR Administration (googletools suite)
+        * Modification du tableau des auteurs + informations (plugins)
+    * Fix #55 Gestion de la métas robots
+        * Works #67 Traduction FR Administration (googletools)
+    * Works #6 Administration multilangue
+        * Ajout de conditions supplémentaires pour la langue active dans la sidebar
+    * Works #71 Sidebar admin (configuration des icones et des liens + multilangues)
+        * Modification de l'API des plugins avec ajout de fonctionnalités smarty
+    * Fix #40 regex - Plugin création de fichiers de traduction statique
+    * Fix #71 modification du lien des pages d'accueil
+    * Fix #71 Sidebar admin (Application de lang-group)
+    * :back - Login - Bug config file - Fix
+    * :front - news/tag - fix wrong var name
+    * :front - pagination - add class on some links
+    * Works #55 Gestion de la métas robots (Backend + SQL)
+    * Works #67 Traduction FR Administration (config cache)
+        * Fix #67 Sidebar admin
+    * :front - News - fix missing translations
+    *  :translations - minor update
+        * Changement intitulé du <h1> sur le root des news
+    * Works #67 Traduction FR Administration (config)
+    * Fix #69 Disposition tailles des images admin
+        * Works #67 traduction du module config (imagesize, config)
+        * Adaptation du module config avec des sections + tabs pour imagesize
+    *  :front - template - wrong var name
+        *Replace old var's name
+    * widget_share_display.php add google share
+    * Work #67 Traduction FR Administration
+        * Traduction module CMS
+        * Traduction module home
+        * Traduction du dashboard, colleft, topnav
+
+Beta 3
+    * Fix bug système de traduction admin (#6)
+        * Ajout de surcharge smarty (backend)
+        * Suppression du dossier dashboard (i18) (#6)
+        * Création du dossier modules + fichier dashboard (#6)
+    * Works #57 Modèle de script/balisage Bootstrap via tinyMCE
+        * Compression des fichiers JS des plugins tinyMCE (mc_catalog,mc_pages, mc_news)
+    * Fix issue Image substitution produits catégories etc (#64)
+    * Modification des drapeau de langues dans sidebar
+    * Ajout baseadmin dans config tinymce
+    * Ajout de la suppression de sous catégorie (#63)
+    * Ajout de la suppression catégorie catalog (#60)
+    * Première traduction de topnav backend (#6)
+    * Ajout de la suppression de page d'accueil (#62)
+    * Ajout du système de traduction de l'administration (#6)
+        * Ajout de fonction native de smarty dans l'API template (backend)
+        * Ajout de addConfigFile (chargement multi config) dans template
+        * Ajout des traductions dans login
+    * fix #59 + imgSrc method improvement
+    * Fix chargement modernizr avec balise smarty
+    * [BO] Add basic localStorage feature for sidebar (First test)
+    * Fix #23 (3rd commit)
+    * Multiple bug fix - enhancement - update + work on #23
+    * Work on #23 - CMS + widget syntax revision
+        widget_catalog_display
+        widget_catalog_nav
+        widget_cms_display
+        widget_cms_nav
+    * Massive syntax revision - catalog smarty var
+    * Bug Fixe - Widget catalog display -img size
+    * Bug fix from previous commit
+        * Modification du nommage de 'htmlBefore' en 'before' dans le constructor
+    * Massive Syntax revision - Widget pattern
+        * Révision du nommage des pattern pour les widget.
+        * Les clées 'htmlAfter' et 'htmlBefore' devienne 'after' et 'before' pour un plus grande simplicité à l'intégration
+    * Enhancement - catalog model getData
+        * load 'last-product' data by subcategory's id
+    * fix bug - level deep recursive issue
+    * fix bug - Catalog - db - s_product
+    * fix bug - product img in model/catalog.php - SetData product
+    * Removing unused folder - /skin/default/img/css
+        * Les images css seront injectées dans le dossier css. Pour faciliter la mise à jour de bootstrap
+    * Modification de l'encodage dans tinyMCE
+    * Nettoyage du fichier des réécritures d'URL
+    * Modification de l'url du plugin contact dans le skin
+    * Ajout de la mise en cache dans l'assignation des variables (#54)
+
+Beta 2
+    * Ajout du switch smarty dans les templates
+    * Fix bug suppression utilisateurs (#54)
+    * Ajout des moteurs de recherches dans le catalogue (#48)
+    * Ajout de l'analyse des permissions de dossier à l'installation
+        * Ajout du dossier install dans les conditions apache
+    * Fix bug tinyMCE Bootstrap (https://github.com/gtraxx/tinymce-skin-bootstrap/commit/5f7cb41ffbc650668914c963c9f871a1efc9958a)
+    * Ajout de la configuration de l'administration
+    * Fix URL élément dashboard
+    * Modification de la gestion des erreurs des inclusions de script
+    * Suppression du dossier extends
+    * Suppression du cache des éléments dynamique (#53)
+    * Clean file (model image)
+    * Fix bug conflit showit sidebar avec métas
+    * Révision des rôles des administrateurs (#20)
+        * Modification du système de test des rôles
+        * Ajout des permissions dans le système utilisateurs
+    * Ajout de la classe active pour menu horizontal (backend)
+        * Modification du script d'identification de fichier (backend)
+    * Correction des informations sur le système de cache
+    * Ajout du support des plugins dans le plugin translation
+    * Update comment - backend/controller/plugin.php
+    * Bug fix Install - infinite loop
+
+Beta 1
+    * Ajout du déplacement de produit dans une autre langue (#34)
+    * Modification du système de création de menu select
+    * Ajout du plugin translation (Edition des traductions statique #40)
+    * Suppression des produits avec transaction - multi tables (#34)
+    * Ajout de la copie de produit
+    * Ajout de la suppression de produits
+    * Bug fix - Widget_news_display
+        * revision de condition, pouvant créer un bug si les données sont vides
+    * Traduction - locali18n
+    * CMS - code styling revision & improvement
+    * Catalog - massive improvement + global revision code styling
+        * Amélioration des class et widget cataloge, révision du code et du nommage.
+        * Révision du nommage des widgets
+    * Backend - bug - function classe magixglobal/pager renommée
+        * Modification des appel vers les function de magixglobal_pager,renommées dans précédent commit
+    * News - Bug fix & improvement
+    * Nettoyage du fichier admin du plugin contact (#7)
+    * Modification du lien vers fichier RSS (définition de la langue)
+    * Suppression des fichiers inutile dans db=>block (backend)
+    * Suppression de max_record dans la table config
+    * Fix bug ajout de pages parente (undefined function)
+    * Ajout du système d'upgrade des tables 2.3.6 => 2.4.0
+    * Fix bug date_register des pages
+    * Modification du numéro de version de jQuery UI dans configuration minify (backend)
+    * Fix bug plugin contact (traduction validation)
+    * Changement du visuel de la validation (frontend)
+    * Changement de la notification du plugin contact
+    * Refonte du script js plugin contact (frontend)
+    * Ajout des fichiers de traduction pour jQuery validate
+    * Fix bug foreign key (plugin contact)
+    * Widget_news - minor bug and update
+        * Afficher les dernière news en sélectionnant/excluant des tags
+        * Mise à jour du widget_news_widget
+    * Remove unused function - frontend_db_block
+    * Modification du logo de Magix CMS
+    * Ajout de la finalisation de l'installation
+    * Supprime les caches après installation
+    * Aménagement du dashboard
+        * Ajout des statistiques utilisateurs dashboard
+        * Ajout des statistiques des langues dans le dashboard
+    * Upgrade Bootstrap 2.2.3 => 2.3.1
+    * Admin - Sidebar/col Left - CSS & Template - fixed width
+    * Nettoyage des fichiers du catalogue (admin)
+
+alpha 12
+    * Update Skin tinyMCE Bootstrap
+    * Fix bug création du fichier de configuration
+    * Fix bug création des tables SQL
+    * Ajout de la création de l'administrateur
+    * Modification index installation (install #38)
+    * Modification de l'analyse du système (install)
+    * Modification de la création du fichier de configuration
+    * Modification du système pour pinguer Google (sitemap)
+    * Préparation des modifications du dossier d'installation
+    * Modification du fichier sql d'installation
+    * Révision googleping (sitemap)
+    * Révision de l'API de création de sitemap (#44)
+    * Fix bug message d'erreur pour menu select
+    * Modification de la fonction de création du sitemap (contact)
+    * Modification de la mise en page du module sitemap
+    * Préparation du fichier JS pour la création des sitemaps
+    * Révision du système de sitemap (Mise en page du module #44)
+    * Mise à jour du fichier update_2.4.0.sql
+    * Ajout des roles d'administration dans le fichier db.sql
+    * Mise à jour du module googletools (#43)
+    * Modification du widget googletools
+    * Modification création de fichiers RSS news, plugins (#42)
+    * Fix bug bootstrap.js (v2.2.3) avec fancybox (downgrade bootstrap.js 2.2.2)
+    * Localisation de l'image de loading des requêtes ajax
+    * Modification du système de création de fichiers RSS (fichier par langue)
+    * Suppression du dossier framework (#37)
+    * Suppression de _loadConfigVars et _getVars dans contact (public.php)
+    * Modification dans les fichiers nav des modules
+    * Re upload filemanager
+    * Ajout de commentaires dans setting.js
+    * Upgrade fancybox 2.1.3 => 2.1.4
+    * Modification du module reewritemetas => seo
+    * Modification des liens vers le module SEO
+    * Ajout de la concaténation frontend (#4)
+    * Ajout du système de mise en cache frontend (#34)
+    * Chargement global du setting (accessible dans les templates)
+    * Fix bug erreur nom de class controller/plugins
+    * Fix bug hoverCallback morris.js
+    * Globalisation des widgets script et headlink dans wcore
+    * Clean class template (frontend)
+    * Ajout du système de cache frontend (sélection depuis admin #36)
+    * Suppression du fichier config/smarty (frontend)
+    * Ajout du fichier smarty dans model (frontend)
+    * Modification de l'appel de smarty dans widget_share_display (frontend)
+    * Modification du système d'installation des plugins
+    * Modification du template d'installation du plugin contact
+    * Modification de l'API plugins frontend
+    * Update de Morris.js 0.3 => 0.41
+    * Modification majeure plugin contact
+    * Modification de l'API plugins backend
+
+alpha 11
+    * Ajout de l'API set_icon dans l'admin pour les plugins
+    * Ajout du système de configuration du cache et de la concaténation
+    * Configuration de la concaténation dans l'admin
+    * Construction du menu dynamique des plugins
+    * Ajout des champs sql de caches et de concaténation dans la configuration
+    * Modification de la configuration des fonctions de smarty (modification de la synthaxe)
+    * Ajout du plugin mc_catalog dans tinyMCE
+    * Suppression du plugin productsearch
+    * Upgrade bootstrap 2.2.2 => 2.2.3
+    * Ajout des icônes pour les appareils mobiles
+    * Modification des requêtes JSON de la recherche de produit
+    * Fix bug positionnement formulaire d'édition d'un produit
+    * Fix bug chargement des données pour tinyMCE venant de la configuration.
+    * Modification des produits relatifs (backend)
+    * Modification de l'ajout des produits relatifs (backend)
+    * Modification du listing des produits relatifs (backend)
+    * Modification de la galerie du produit - Ajout et listing (#34)
+    * Mise à jour jQuery UI Bootstrap (Révision)
+    * Préparation modification galerie images dans produit (backend)
+    * Suppression des produits dans catégories/sous catégories (#34)
+    * Listing des catégories et sous catégories dans le produit.
+    * Fix bug sidebar colleft détection sous catégorie catalogue
+    * Dernière verification issue #35
+    * Modification de l'ajout de produits dans catégories/sous catégories
+    * Modification du listing des produits dans catégories/sous catégories
+    * Fix bug changement url utilisateur catalogue (backend)
+    * Modification de l'édition des produits
+    * Modification de l'ajout de produits
+    * Modification de la suppression des images categories, sous catégories et produits
+    * Suppression du champs ordercatalog dans mc_catalog
+
+alpha 10
+    * Modification de l'upload des images des produits catalogue (backend)
+        * Nouvel affichage des images de produits
+        * Révision de l'ergonomie d'édition des produits
+    * Affichage la liste des produits par langue (backend)
+        * Déplacement de la pagination par tableau (backend)
+        * Fix bug dans mise à jour des sous catégories (backend)
+    * Modification de l'image sous catégorie (backend)
+        * Fix bug chargement de l'image sous catégorie (backend)
+        * Déplacement de la fonction set_pagination_data
+    * Modification de l'envoi de l'image de sous catégories du catalogue
+    * Modification du chargement des images des sous catégories (backend)
+        * Préparation pour la mise à jour des images de sous catégories
+    * Modification de l'upload des images de catégories catalogue (backend)
+        * Ajout des méthodes supplémentaires de jquery validate
+        * Modification des url de mise à jour de catégorie (prise en compte des tabs)
+    * Modification de l'édition des catégories et sous catégories (catalogue)
+        * Affichage de l'url public de la catégorie dans l'édition
+        * Affichage de l'url public de la sous catégorie dans l'édition
+
+alpha 9
+    * Création des onglets d'édition des catégories (backend)
+        * Modification du listing des sous catégories (onglet sous catégories - backend)
+        * Affichage de l'url de la sous catégorie (backend)
+    * Chargement des données d'édition d'une catégorie (catalogue)
+    * Refonte du listing des catégories du catalogue
+    * Insertion de catégories dans le catalogue
+    * Préparation pour l'édition des catégories
+        * Ajout de la structure catalogue (produits)
+    * Upgrade jQuery UI 1.10.0
+    * Upgrade jQuery UI Bootstrap 0.5
+    * Modification des appels dans minify
+
+alpha 8
+    * Ajout de la structure catalogue (catégorie)
+    * Ajout du catalog dans le widget script_name (détection pour sidebar)
+    * Modification du plugin clearcache
+        * Modification des fichiers phtml avec la nouvelle structure
+        * Modification du fichier admin.js
+        * Modification du comportement de la suppression
+    * Modification de l'API des plugins
+    * Fix bug sidebar : list-style (backend) (issue 33)
+    * Détection des modules actifs pour le menu (backend)
+    * Upgrade de jmShowIt + adaptation nouvelle API
+        * Modification section->colleft pour jmShowIt (backend)
+    * Début de la modification du système de plugins (backend)
+    * Modification du menu vertical avec jshowit (premier test)
+        * Mise à jour de Font Awesome (3.0.2)
+    * Suppression des images dans actualités (backend)
+    * frontend - model - news / remove PHP_ROUND method
+    * work on issue 30 - frontend - revision pagination news
+    * clean - frontend - controller & db - home
+        * nettoyage des function controller
+        * suppression des function non utlisées dans db
+    * clean code structure on app/frontend + update (issues 23)
+        * nettoyage du code php
+        * Revision noms variables smarty home
+    * skin - fix breadcrumb.phtml issue
+    * frontend - controller & db - catalog & cms - clean
+        * fix bug on controller/catalog.php
+        * clean and comment update on controller/cms.php
+        * clean db/catalog.php
+        * clean comment on db/cms.php
+        * db/cms.php rename s_data_current_page => s_page_data
+        * db/cms.php remove s_data_parent_page and merge in s_page_data
+
+alpha 7
+    * Début du nettoyage du fichier news.php (backend)
+    * pagination révision de la méthode pour récupération et formatage de la pagination (frontend)
+        * la pagination n'est plus crée dans méthod set_data mais dans le widget
+        * set_data retourne les valeurs nécessaire pour la création de pagination 'total', 'limit'
+        * utilisation de la function setdatapager
+    * Déplacement des fichiers JS utilisés uniquement dans le backend
+    * Modification pour l'affichage du module des news (backend)
+        * Ajout de l'icône pour la class open du block de métas
+        * Modification d'un champ dans la table news (n_content)
+        * Ajout du fichier js pour le module des news (backend)
+        * Ajout des fichiers index et list.phtml pour le module des news(backend)
+    * Work on #31 - Refonte galerie d'image produit
+        * new widget_product_gallery
+        * remove widget_catalog_microgalery
+        * intégration de fancybox dans le thème (js + css) & appels
+        * retrait de l'appel de fancybox dans groupConfig
+        * suppression de fancybox de framework/config
+        * ajout des condition pour gallerie dans la class model du catalog
+        * ajout requête dans class db du catalog
+    * Ajout du système de chargement dynamique de CSS dans l'éditeur (issues #29)
+    * Modification du chargement du setting de l'éditeur
+    * Translate update (minor)
+    * fix #26 - widget_share_display & dropdown bootstrap + clean comment on widget_news_display
+        * intégration du partage dans le template
+    * Work on #26 - widget_share_display
+        * Paramètre smarty dataSelect['select'] pour définir les type de partage et leur ordre
+        * Structure Html configurable depuis paramètre smarty (sauf lien)
+    * Modification des menus de l'admin (globale)
+    * Ajout de la suppression des champs inutile dans la table setting
+    * Insertion champs supplémentaire dans setting
+    * Nettoyage champs inutile dans setting
+    * Revision widget_social_network
+        * Changement de l'url de partaga twitter
+        * balisage dynamique en construction
+    * Suppression de tinyMCE 3.5.6
+    * Ajout du skin tinymce bootstrap (Voir commit précédent)
+    * Upgrade de tinyMCE 3.5.6 => 3.5.8
+    * Update Font awesome 2 => 3.0
+    * Modification du menu top et left principal (backend)
+    * Mise à jour de jQuery UI (frontend)
+    * Suppression de l'ancien architecture de minify (frontend)
+    * Ajout d'une nouvelle structure pour minify (frontend)
+    * Suppression du dossier frontend dans app/extends
+    * Suppression du dossier core dans extends
+    * Début du nettoyage des widgets et déplacement dans les dossiers définitif
+    * Update des champs settings dans mysql (voir fichier update.2.4.0.sql)
+    * Système de configuration des images
+    * Modification du menu de configuration
+    * Modification des intitulés de liens du menu de la configuration
+    * Ajout de la configuration du manager de fichier pour tinymce
+
+alpha 6
+    * Ajout du menu pour les éléments de configuration
+    * Ajout du système de configuration des modules
+    * Modification de la page login
+    * Ajout du nouveau screenshot du thème par defaut
+    * Ajout des nouveaux fichiers pour le theming
+    * Ajout du theming + suppression des anciens fichiers
+    * Ajout du widget dans skin/default/widget
+        Issues #24 :
+        * ajout de l'appel dans header.phtml
+        * Ajout de fonction dans frontend/IniLang.php
+    * Ajout des langues dynamique dans la configuration (backend)
+    * Mise en place d'un menu horizontal (backend) à définir
+    * Fix Issue #8 - Nommage des variables catalogue
+        Issues #8 :
+        https://github.com/gtraxx/magixcms/issues/8
+        * revision du nommage des variable smarty dans la partie catalog
+        * clibelle & category => name_cat
+        * slibelle & subcategory => name_subcat
+    * Modification de la sidebar admin + message login
+    * Ajout d'une nouvelle page de login
+    * Modification du système de configuration
+    * Déplacement du plugin filemanager en dehors de l'architecture de tinymce pour permettre l'ajout du filemanager officiel
+    * Suppression du système model member
+    * Déplacement des functions de formatage et de configuration des listes des class controller au class model
+    * widget_news_display: déplacement de la function s_tag_al (SQL query) vers la class fontend_db_news
+    * Création des modèles de classe pour cms, catalog et news
+
+alpha 5
+    * Ajout du fichier SQL de mise à jour vers la 2.4.0
+    * Ajout de la nouvelle base de données avec les adaptations
+    * Ajout du module pour la gestion des pages d'accueil
+    * Statistiques ds pages d'accueil
+    * Organisation des sous menu avec dropdown (sidebar admin)
+    * Système de mise à jour des langues
+    * Système d'ajout de langues
+    * Ajout de la prévisualisation de page avec Fancybox
+    * Ajout de Fancybox 2.1.3
+    * Modification du sous menu de langues dans les modules
+    * Mise à jour de jmShowIt
+    * Ajout d'un htaccess pour les caches
+    * Ajout de la navigation pour le module des langues
+    * Fix bug balisage sous menu CMS
+    * Création des statistiques de langues
+
+alpha 4
+    * Modification du système de notification lors d'une requête
+    * Suppression des pages CMS
+    * Changement de status d'une page dans la sidebar dynamique du template
+    * Edition des pages CMS
+    * Construction du sous menu CMS (parent/enfant)
+    * Upgrade de jQuery UI Bootstrap
+    * Ajout des fichiers callback des requêtes ajax (cms)
+    * Modification des requêtes SQL ajout et édition CMS(optimisations)
+    * Modification de la structure du fichier login suivant le modèle de bootstrap
+    * Ajout de filemanager open source
+    * Upgrade de bootstrap 2.2.1 => 2.2.2
+    * Remplacement de variable en double dans mcbackend
+    * Remplacement des liens incorrect dans groupsConfig.php (admin)
+
+alpha 3
+    * Construction des url CMS dans l'édition des pages
+    * Modification de l'édition des pages CMS
+    * Modification du listing des pages parentes
+    * Listing sous forme de tableaux (sortable)
+    * Ajout d'un sous menu pour gérer les "modules" (dropdown)
+    * Ajout de jquery ui bootstrap …
+    * Modification de la mise en page du footer
+    * Premier test avec jQuery UI et les éléments boostrap
+    * Configuration de l'éditeur + définition des constantes
+    * Déplacement de tinymce
+    * Fix bug avec la classe smarty (backend)
+    * Ajout de la constante PATHADMIN
+    * Déplacement des favicons dans le template admin
+
+alpha 2
+    * Modification du fichier JS dashboard
+    * Modification du fichier dashboard + suppression fichier version
+    * Ajout d'une adresse mail dans la licence GPL3
+    * Organisation du modele dashboard
+    * Suppression des icônes de boostrap dans la feuille principal (prise en charge "font")
+    * Organisation des sections
+    * Modification de l'entête HTML
+alpha 1
+    * Ajout de font awesome pour bootstrap
+    * Ajout du modèle pour le dashboard
+    * Ajout des icônes pour les champs login
+    * Modification de l'entête html
+    * Fix bug chemin du fichier icônes de bootstrap
+    * Ajout de la nouvelle page de login
+
+pre alpha
+    * Modification des informations du fichier README
+    * Ajout des dossiers manquants + gitignore
+    * Ajout des nouveaux fichiers pour la modification de l'architecture de l'admin
+
+2.3.6
+    * Fix bug avec jquery live => remplacement par on dans jquery 1.7.2
+    * Modification du chargement de jquery et jquery form dans les plugins de tinymce de magix cms (cms,catalog,news)
+    * Ajout du fichier jcms 0.3 (admin) (la source et version compresser)
+    * Fix bug dans jcatalog avec jquery 1.7.2
+    * Ajout de tinyMCE 3.5.6 avec le support de visualaid
+    * Ajout de l'espagnol dans le plugin youtube dans tinyMCE
+    * Mise à jour de jQuery UI 1.8.15 => 1.8.23
+    * Adaptation de la configuration de tinyMCE
+    * Suppression de tinymce 3.4.9 - Ajout de tinymce 3.5.6
+    * Upgrade jQuery 1.7 => 1.7.2
+    * Upgrade jQuery validate 1.9 => jquery validate 2.0.0.pre
+    * Modification du menu select des langues (code ISO + Langue)
+    * Modification du sélecteur de template (affichage succint)
+    * Application du patch pour la faille détectée dans pdwfileupload (tinymce + ckeditor)
+    * Fix bug sur le calcul de temps pour effacement des sessions expirés (Changement dans SQL + script)
+    * Ajout de la licence dans codehightlight (tinyMCE)
+    * Ajout du script compressé dans codehighlight (tinyMCE)
+    * Fix bug dans le chargement de contenu dans l'éditeur tinymce avec codehighlight (catalog,cms)
+    * Ajout des changements apportés dans Jimagine (constants et fbwidgets)
+    * Ajout de la nouvelle version 1.2 de codehighlight dans tinymce (prise en charge du nouvel affichage des scripts)
+    * Upgrade youtube plugin tinymce 1.3 => 1.4
+    * Fix bug erreur de fermeture d'une balise dans le widget "cat load products"
+    * Fix bug Suppression de produit (modification requête POST)
+    * Ajout des options supplémentaire des effets de imagefilter
+    * Ajout du paramètre de class css d'ouverture (open)
+    * Ajout du plugin imagefilter dans phpthumb (Création magix dev) pour la création de filtre pour les images
+	* Fix bug Doublon d'une classe CSS dans la balise <a> des images du widget_news_tags
+	* Upgrade swiftmailer 4.1.2 => 4.2.1
+	* Upgrade in PHPThumb with github version for fix bug
+	* Fix bug fonction non disponible par défaut chez certain hébergeur (htaccess)
+	* Fix bug dans la requête pour retourner les derniers produits
+	* Mise à jour de minify suivant les correctifs appliqués
+	* upgrade jquery form 2.93 => 3.0.3
+	* Amélioration du système de début de l'upload des images
+	* Fix bug sur les notifications d'erreurs de l'upload des images
+	* Modifications de la taille maximum des images via MAX_FILE_SIZE
+	* Fix bug Suppression de produit (modification requête POST)
+	
+2.3.5
+	* Upgrade jquery form 2.87 => 2.93
+	* Adaptation des plugins tinymce avec jquery form 2.93
+	* Adaptation du plugin clearcache avec jimagine et jquery 1.7
+	* Fix bug insertion et suppression des éléments dans le plugin contact adaptation avec jimagine)
+	* Ajout de la fonction setTimeLocal dans le passage des langues et l'utilisation des dates suivant la langue.
+	* Modification de l'entête des scripts
+	* Ajout de la surcharge des widgets dans les templates (addWidgetDir)
+	* Fix bug paramètres fetch,assign,display (template) avec is_cached
+	* Ajout de la surcharge des widgets dans le core de la classe smarty frontend
+	* Fix bug position des tags dans les news
+	* Fix bug pagination dans les news + autres modules
+	* Suppression de correctif.css
+	* Ajout de la localization dans jquery validate
+	* Modification du formulaire de contact pour le chargement de l'isovalidate
+	* Modification de la classe magixglobal dateformat
+	* Application des modifications de dateformat dans les fichiers sitemap, rss, news et les widgets de news.
+	* Ajout de la classe CSS brush smarty dans le plugin codehighlight (tinyMCE)
+	* Fix bug formatage de la date de l'url (liste news)
+	* Fix bug pagination dans les actualités (modification du type de tableau)
+	* réintégration de la notification pour le dossier install + chmod
+	* Fix bug insertion d'un nombre flottant pour le prix.
+	* Fix bug jgoogletools (reloadhtml)
+	* Modification du lien de la documentation développeur
+	
+2.3.5RC4
+	* Configuration du nouveau template (default v2) + adaptation des widgets avec le framework CSS
+	* Intégration de la boite à outils JS (Jimagine) dans l'administration (backend)
+		- Adaptation des JS avec nicenotify 
+			-jhome
+			-jdashboard
+			-jgoogletools
+			-jcms
+			-jlanguage
+			-jrewritemetas
+			-jsitemap
+			-jcatalog 0.2 => 0.3
+	* Upgrade jQuery 1.5.2 => 1.7.1
+	* Adaptation des plugins tinyMCE avec jQuery 1.7
+	* Upgrade colorbox 1.3.17 => 1.3.18
+	* Upgrade jquery validate 1.8.1 => 1.9 (compatible html5)
+	* Upgrade jQuery forms 2.83 => 2.87
+	* Ajout du thème par défaut v2
+	* Ajout de jquery fbwidget (jimagine)
+	* Adaptation des requêtes ajax de l'admin avec nicenotify (jimagine)
+	* Adaptation des widgets magix cms avec framework css (v2)
+	* Suppression de tinymce 3.4.5
+	* Update tinymce 3.4.7
+	* Ajout de showitmenu dans jimagine
+	* Ajout du correctif pour google plus
+	* Adaptation du système d'installation avec "jimagine"
+	* Ajout du support CSS de la pagination dans le widget list_news(frontend)
+	* Fix bug plugins backend auto installation SQL
+	* Adaptation des fichiers JS backend avec Jimagine (fichier setting)
+	* Fix bug pdw file browser avec php 5.3
+	* Fix bug listing des images dans pdw file browser
+	* adaptation du fichier jcatalog 0.3 + minification du fichier et inclusion dans le catalogue
+	
+2.3.5RC3
+	* Fix bug pdw configuration (tinyMCE conf)
+	* Fix bug ns_jcatalog_subcategory dans le drag and drop des produits dans une sous catégorie.
+	* Fix bug configuration de smarty(backend,frontend,install) avec smarty 3.1
+	* Fix bug avec l'affichage des tags dans les news (backend)
+	* Fix bug template configLoad
+	* Add addConfigFile dans les fonctions de template frontend
+	* Ajout réécriture des URLS pour les plugins avec paramètres
+	* Ajout du widget intégré "getplugin" pour la construction d'url de plugins dans les skins
+	* Suppression de la fonction getTypeModule (imagepath)
+	* Suppression de la fonction filter_path_img (imagepath)
+	* Ajout de la fonction filterPathImg pour la gestion des chemins des dossiers images (imagepath)
+	* Ajout de paramètres supplémentaire dans append_display,append_fetch,append_assign (plugins)
+	* Ajout de paramètres supplémentaire dans display,fetch,assign (template backend)
+	* Mise à jour des champs SQL type int avec l'option unsigned
+	
+2.3.5RC2
+	* Changement de version 2.3.5 RC1 => RC2
+	* Suppression de tinymce 3.4.4
+	* Upgrade tinymce 3.4.5
+	* Suppression de ckeditor 3.4.1
+	* Upgrade ckeditor 3.6.2
+	* Fix bug écriture du cache pour pdw_file_browser avec ckeditor
+	* Modification de la classe css par defaut (class_container) dans widget_catalog_sidebar_category et widget_catalog_sidebar_products
+	* Ajout des paramètres length et delimiter dans le widget_news_tags
+	* Fix bug dans les images par défaut du listing dans un tags de news (theme par defaut remplacer par theme courant)
+	* Ajout d'une condition pour la description d'un produit dans widget_load_catalog_category_last_products, widget_catalog_cat_load_products, widget_catalog_load_products
+
+2.3.5RC1
+	* Fix bug reset_forms dans jnews
+	* Changement de la version de magix cms => 2.3.5RC1
+	* Fix bug bouton upgrade (conditions)
+	* Suppression du dossier forms dans le template par défaut
+	* Modification du numéro de version 2.3.5 dans sql
+	* Ajout du parsing d'url http://www.youtube.com/watch?v=xxxxxxxx pour le plugin youtube dans tinymce
+	* Ajout de la possibilité d'utiliser deux types d'urls avec le plugin youtube dans tinyMCE
+	* Correction au niveau CSS dans le plugin youtube dans tinyMCE
+	* Ajout de la licence + Fichier README dans youtube plugin tinymce
+	* Fix bug requête SQL pour charger les images de catégorie
+	* Fix bug changement de fonction pour le chargement des images de catégories dans widget_catalog_cat_display
+	* Charge uniquement les news activé pour la création du flux RSS
+	* Ajout du système pour la construction de la sidebar par langue (admin)
+	* Fix bug block catalog (requête widget cat display)
+	* Fix bug avec jquery validation et le script par défaut
+	* modification de la classe sidebar construct
+	* Fix bug dans le chemin de récupération de l'image par défaut des news
+	* Changement dans le title par défaut dans les tags de news
+	
+2.3.49
+	* Fix bug widget_catalog_cat_display (appel de fonction incorrect)
+	* Ajout du singleton js jdashboard 0.2 (src + min)
+	* Ajout du singleton js juser 0.2 (src + min)
+	* Déplacement du fichier source jsettingparams 0.1
+	* Déplacement du fichier source JS du setting des images et des langues dans le dossier src
+	* Déplacement de fichier source dans un dossier src
+	* Ajout des fichiers compresser JS pour les singleton JS
+	* Ajout de données dans le fichiers XML du plugin contact + ajout dans le parser
+	* Ajout de la configuration dans le XML du plugin clearcache
+	* Ajout du séparateur dans le widget lang prelude
+	* Fixe bug avec la suppression dans le dashboard des éléments CMS, produits, news
+	* Ajout d'une classe pour définir des sessions dans la partie frontend (exemple: plugin)
+	* Ajout du système de détection des langues du navigateurs (préparation du travail)
+	* Déplacement du fichier source jrewritemetas.0.1.js
+	* Déplacement du fichier source jsitemap.0.1.js
+	* Déplacement des fichiers source javascript dans un dossier src
+	* Ajout des fichiers javascript compressé
+	* Adaptation des fichier phtml avec les fichiers .min.js
+	* Réactivation de la notification dans le template par défaut
+	* Suppression de tinymce 3.4.3.2
+	* Upgrade tinymce 3.4.4
+	
+2.3.48
+	* Ajout des ACL pour les plugins (allow_access)
+	* Ajout du fichier config.xml dans le plugin contact
+	* Modification du widget cat_display pour l'utilisation des paramètres d'exclusion, ou de sélection
+	* Modification du fichier xml config.xml dans le plugin contact (structure redéfinie)
+	* Ajout du fichier de configuration (config.xml) dans le plugin clearcache
+	* Modification du système automatique de détection des niveaux dans les plugins (backend)
+	* Suppression de swiftmailer 4.0.6
+	* Ajout de swiftmailer 4.1 (nouveau nom de dossier "swift")
+	* Adaptation de la classe mail avec la nouvelle version de swiftmailer 4.1
+	* Fix bug avec la suppression des pages cms enfants
+	* Modification de la fonction javascript pour la suppression des pages CMS
+	* Ajout d'un widget alternatif pour afficher les produits de catégories dans le menu sidebar (widget_catalog_sidebar_products)
+	* Modification des widgets catalogue pour l'intégration des exclusions et sélections personnalisés
+		- widget_catalog_cat_display
+		- widget_catalog_sidebar_category
+		- widget_catalog_sidebar_products
+		- widget_catalog_rel_product
+	* Adaptation du système d'upgrade SQL avec la nouvelle API
+	* Update jQuery UI 1.8.10 => 1.8.15
+	* Update jQuery UI i18n(1.8.10) => i18n (1.8.15)
+	
+2.3.47
+	* Réorganisation du catalogue avec la séparation des catégories par langue (ergonomie)
+	* Refonte des scripts javascript pour le traitement du catalogue (conversion vers ns)
+	* Modification de la requête SQL de chargement des catégories(backend)
+	* Analyse de la structure des urls de traitements du catalogue(backend)
+	* Fix bug dans le chargement du paramètre suivant la langue (widget last catalog)
+	* Ajout des condition nécessaire pour le widget social network
+	* Modification de la taille maximum d'upload img (2000=>3000)
+	* Fix bug sitemap request (mc_cms_page(s))
+	* Fix bug listing des produits dans une sous catégorie catalogue (widget load products)
+	* Activation du sitemap pour les images du catalogue
+	* Modification du système de sitemap pour les plugins (chargement dynamique)
+	* renforcement de la sécurité avec des clés unique pour chaque utilisateurs
+	* Ajout de la fonction de génération de clé unique type uid
+	* Ajout d'une condition pour le chmod des fichiers images
+	* Suppression des données sur l'ancienne classe forms
+	* Réorganisation de la sidebar admin
+	* Ajout des fonctions javascript pour l'administration des produits.
+	* Finalisation du système de langues pour les catégories catalogue (ergonomie)
+	* Suppression des fichiers inutiles dans le framework.
+	* Ajout du namespace javascript pour l'utilisation des googletools de magix cms
+	* Ajout du namespace javascript pour l'utilisation du sélecteur de template
+	* Ajout de nouvelles icônes dans le sprite magixicon
+	* Ajout du plugin tinymce news_search
+	* Réorganisation du plugin contact (ajout du système ajax + singleton javascript)
+	* Fix bug padding dans la class block dans framework CSS
+	* Fix bug mise en page de l'upload d'images catégories, sous catégorie du catalogue
+	* Fix bug chargement des tailles pour les micro galeries (backend)
+	* Ajout de paramètres pour définir les classes CSS de chaque widgets du catalogue + news
+	* Ajout de la classe pour gérer les chemins vers les images intégré (catalogue,news,etc...)
+	* Fix bug dans le chargement de la taille "adaptive" des sous catégories
+	* Ajout de l'image dans le widget last news
+	* Modification du système de permissions des utilisateurs dans les modules  + définition du widget de permissions
+	* Suppression des fichiers inutile dans backend et frontend
+	* Fix bug image button light (frontend)
+	* Fix synthaxe widget admin level dans les phtml du catalogue (backend)
+	* Changement de nom pour les fichiers de langues frontend exemple: localfr.conf => local_fr.conf
+	* Fix bug autocomplete dans le skin par default avec aristo-1.8.7
+	
+2.3.46
+	* Ajout du système de création de relation linguistique entre les pages CMS
+	* Ajout de la suppression des pages CMS avec contrôle des niveaux.
+	* Mise à jour du fichier SQL d'installation pour accueillir la nouvelle table des relations entre les pages dans différentes langues
+	* Ajout de l'autocomplete pour trouver des pages dans d'autres langues (voir le système de création de relation linguistique)
+	* Ajout de nouvelles icônes dans magix icône
+	* Ajout du déplacement de pages CMS
+	* Début du travail sur le module des langues (admin)
+	* Adaptation du module lang (admin) avec la nouvelle structure SQL
+	* Ajout des statistiques pour les langues via jqplot
+	* Ajout des requêtes SQL public de langues (admin) dans db block
+	* Fix bug IE7 avec les tailles des blocks UI
+	* Upgrade colorbox 1.3.15 => 1.3.17
+	* Ajout de l'édition du paramètre de langue par défaut
+	* Modification du comportement du module des pages d'accueil
+	* Ajout du système de langue par défaut dans la page d'accueil + dans le widget getlang (frontend)
+	* Ajout du widget autoload_i18n pour le chargement des fichiers de configuration par langue
+	* Chargement de la configuration des images dans chaque module 
+	* Ajout du nouveau setting pour les images
+	* Configuration de la table + insertion par défaut pour les tailles des images
+	* Suppression du widget prelud_lang => remplacement par widget_lang_prelude
+	* Ajout du widget cms_sidebar_page
+	* Ajout du widget content_language
+	* Upgrade jquery form 2.63 => 2.83
+	* Prise en charge des images pour les actualités (ajout d'une image depuis l'admin)
+	* Modification du fichier sql pour l'installation afin de correspondre aux nouveautés
+	* Correction des réécritures pour les plugins
+	* Ajout du système de tags dans les news
+	* Upgrade de jquery validate 1.8 => 1.8.1
+	* Ajout des micro plugins jquery de magix cms de l'admin (magixtools)
+	* Ajout de la table des tags de news
+	* Ajout du fil d'ariane dans le module CMS sur base du catalogue
+	* Réintégration du widget manquant dans le core (cms_seo)
+	* Correction du widget last products pour accueillir les produits par défaut dans chaque langue
+	* Fix bug ajout d'une nouvelle langue (langue par défaut récurente)
+	* Refonte du système de limitation de pages (adaptation de la table mc_config)
+	* Réorganisation des fonctions global du setting + config
+	* Ajout de la limitation dans le module CMS
+	* Nettoyage des widgets
+	* Ajout des nouveaux widgets intégré
+	* Ajout des widgets pour la construction de la sidebar catalogue
+	
+2.3.45
+	* Début de l'intégration du framework CSS sur le nouveau template
+	* Création des requêtes block pour les news (frontend)
+	* Ajout des statistiques pour les pages CMS (admin)
+	* Suppression de tinymce 3.4.3
+	* Ajout de tinymce 3.4.3.2
+	* Changement des requêtes pour le widget CMS (admin)
+	* Adaptation du moteur de recherche interne des pages dans la structure
+	* Fix bug dans le plugin tinyMCE cmspage (adaptation avec le nouveau moteur de recherches)
+	* Amélioration de l'affichage du plugin youtube dans tinyMCE.
+	* Ajout de la Prévisualisation dans l'édition des pages CMS
+	* Organisation des blocks dans chaque niveau du module CMS (admin)
+	* Ajout de l'édition des pages CMS (module CMS de la version 2.3.5)
+	* Système pour l'ajout de pages parentes (module CMS de la version 2.3.5)
+	* Système pour l'ajout de pages enfants (module CMS de la version 2.3.5)
+	* Ajout du namespace javascript pour le module CMS (admin)
+	* Nouveau plugin pour la gestion des compteurs de champs (easychar)
+	* Correction de la table SQL mc_cms_pages (attribut par défaut dans certain champs)
+	* organisation des requêtes SQL pour le catalogue
+	* Fix bug dans la réécriture d'url du catalogue (produits)
+	* Correction du plugin productsearch : ajout du title dans le lien
+	* Adaptation du helpers des réécritures d'urls catalogue avec le htaccess
+	* Ajout des nouveaux widgets pour le catalogue
+	* Adaptation du plugin contact avec les changements du core
+	* Ajout des news dans la table de gestion des images
+	
+2.3.44
+	* Suppression de tinymce 3.4.2
+	* Mise à jour de tinymce 3.4.3
+	* Ajout du fichier jrewritemetas
+	* Ajout du fichier jsettingeditor
+	* Ajout du fichier jsettingimage
+	* Ajout du fichier jsettingparams
+	* Ajout du fichier jsitemap
+	* Ajout du menu "paramètres" dans la configuration
+	* Ajout du menu "Editeur Wysiwyg" dans la configuration
+	* Ajout du menu "Taille des images" dans la configuration
+	* Modification du module "Réécriture des métas" dans l'administration (Adaptation avec la nouvelle table SQL).
+	* Analyse de la structure des pages CMS dans l'administration.
+	* Analyse du système de langue
+	* Nouvelle structure de base de données pour le module CMS
+	* Ajout des nouvelles réécriture d'url pour le module CMS
+	* Fix bug listing des réécritures de métas (admin)
+	* Ajout du système pour permettre la réécriture des métas dans les plugins
+	
+2.3.43
+	* Fix bug dans le skin cirkuit de tinyMCE (adaptation pour plus de confort)
+	* Modification du plugin youtube dans tinyMCE (utilisation des URLS de partage plutôt qu'un identifiant)
+	* Ajout de l'option autoplay dans le plugin youtube pour tinyMCE
+	* Fix bug quote dans productsearch + restructuration du plugin cmspage (tinyMCE)
+	* Ajout de tinyMCE 3.4.2 avec un nouveau thème (cirkuit)
+	* Suppression du slider dans l'installation + préparation du système de mise à jour SQL
+	* Réaménagement de l'installation (CSS + JS)
+	* Ajout du système pour le test de connexion SQL
+	* Modification du comportement de l'installation
+	* Préparation pour le système d'upgrade
+	* Modification de la mise en page de l'installation.
+	
+2.3.42 RC6
+	* Suppression du menu "administrer" dans la configuration
+	* Upgrade tinymce 3.4.1
+	* Ajout du style pour le plugin tinyMCE codehighlight
+	* Fix bug des quote dans les plugins cmspage et productsearch
+	* Suppression de tinymce 3.4
+	* Ajout de le publication des news depuis le widget (backend)
+	* Fix bug quote dans l'affichage d'un emplacement vidéo
+	* Retourne l'url de la news dans l'édition
+	* Ajout de la fragmentation du module seo (début de la refonte)
+	* Ajout du nouveau widget seo pour les réécritures de métas (début de la refonte)
+	* Ajout de 112 icônes dans magix icon
+	* Ajout de nouveau formatage pour les manipulations de dates
+	* Upgrade la classe RSS pour correspondre au formatage des dates
+	* Modification de l'icône des plugins par défault
+	* Ajout de la variable pour la gestion des images de plugin côté admin
+	* Upgrade jquery 1.5.1 => 1.5.2
+	* Modification des plugins tinymce avec jquery 1.5.2
+	* Ajout d'un paramètre dans blockdom dans la liste des langues pour ajouter le bouton sur la droite
+	* Ajout de submenu afin d'analyser l'ergonomie des plugins et modules intégré
+	* Fix bug modification de la position d'une sous catégorie dans le catalogue
+	* Ajout de l'algorithme short_alphanumeric_id dans magixglobal
+	* Ajout de datepicker avec image dans globalform
+	
+beta 2.3.42 RC5
+	* Fix bug plugin tinyMCE cmspage, productsearch (insertion de lien)
+	* Ajout de codehighlight dans tinyMCE
+	* Upgrade jQuery validate 1.7=>1.8
+	* Upgrade jquery form 2.64=>2.67
+	* Début de la modification de magixicon
+	* Nettoyage de la css pour les formulaires frontend (default)
+	* Suppression tinymce 3.4b3
+	* Upgrade tinymce 3.4 stable
+	
+beta 2.3.42 RC4
+	* Fix bug ajout des sous catégories dans le catalogue
+	* Fix bug mise à jour d'une image de sous catégorie
+	* Fix bug chargement des images de sous catégorie
+	* Liste les catégories catalogue dans une requête JSON + refonte du système "sortable"
+	* Upgrade jQuery ui 1.8.9 => 1.8.10
+	* Upgrade tinyMCE 3.4b2 => 3.4b3 (Fix bug insertion de liens)
+	* Upgrade jQuery 1.5 => 1.5.1 (Voir changelog jQuery)
+	* Correction graphique dans l'administration
+	* Fix bug changement d'éditeur dans l'administration (Evènement rétabli)
+	* Minify : move cc-checking to constructor
+	* Fix bug notification (position du bouton de fermeture)
+	* Fix bug ajout et modification d'une image de catégorie et sous catégorie catalogue
+	* Fix bug affichage des images d'un produit (microgalerie) dans l'administration
+	* Fix bug taille des boutons jQuery dans l'administration
+	* Fix bug positionnement des icônes dans les listes "sortable" avec IE7 !
+		
+beta 2.3.42 RC3
+	* Suppression des sous catégories dans la page ROOT des catégories
+	* Construction du système ajax pour la liste des sous catégories dans l'édition des catégories
+	* Modification de la requête SQL pour le listing des sous catégories
+	* Ajout du plugin dashboardWidget pour la gestion des widgets de l'admin
+	* Ajout d'une icône pour le générateur de mot de passe.
+	* Modification du système micro galerie dans l'admin pour une récupération via JSON.
+	* Ajout de la génération automatique de l'identifiant des images dans la micro galerie.
+	* Fix bug positionnement des images micro galerie (backend)
+
+beta 2.3.42 RC2
+	* Suppression de phpmailer
+	* Ajout de swiftmailer 4.0.6
+	* Ajout de la classe hériter de swiftmailer dans magixglobal (magixglobal_model_mail)
+	* Adaptation du plugin contact avec la nouvelle API mail (magixglobal_model_mail)
+	* Modification de la classe frontend des plugins avec un singleton (instance create)
+
+beta 2.3.42 RC1
+	* Ajout du plugin productsearch dans tinyMCE
+	* Construction du moteur de recherche pour le plugin productsearch
+	* Fix bug récupération des résultats avec JSON dans cmspage(tinyMCE)
+	* Ajout de statusCode dans les requêtes ajax JSON dans le catalogue (jQuery 1.5)
+	* Ajout d'une simple validation javascript dans le plugin contact
+	
+beta 2.3.42c
+	* Refonte du système de réécriture des métas avec des méthodes ajax
+	* Chargement et upload de l'image d'une catégorie catalogue avec des méthodes ajax
+	* Correction du fichier d'installation de la base de données (db.sql)
+	* Ajout de l'algorithme pour la création d'identifiant unique pour les images catalogue
+	* Modification de l'envoi et chargement des images de produits.
+	* Fix bug chargement des images du catalogue via ajax (backend)
+	* Ajout du plugin cmspage dans tinyMCE
+	* Construction du moteur de recherche pour le plugin cmspage
+	* Modification dans la requête JSON pour le moteur de recherche CMS interne.
+	* Upgrade jQuery 1.4.4 => jQuery 1.5
+	* Fix bug jquery validate 1.7, application du patch 9aa53f9241224ba349f9 de compatibilité (jquery validate 1.7b)
+	* Upgrade jQuery UI 1.8.6 => 1.8.9 avec adaptation des thèmes intégrés
+	* Upgrade jquery.colorbox-1.3.10.js => jquery.colorbox-1.3.15.js avec adaptation des thèmes
+	* Fix bug chargement du thème colorbox white sous IE 7
+	* Upgrade jQuery UI 1.8.9 dans le skin par defaut
+	
+beta 2.3.42b
+	* Fix bug chemin des plugins pour l'execution de l'admin et public
+	* Ajout du plugin smarty pour l'intégration de script externe javascript
+	* Ajout de textchange compatible jquery 1.4.4 + appel externe
+	* Ajout de l'entête texte dans la classe header de magixglobal
+	* Upgrade tinyMCE 3.3.92 => 3.4b2
+	* Déplacement du dossier cache de pdw_file_browser dans var + Nouvelle configuration (version tinyMCE)
+	* Système pour l'upgrade de la base de données
+	* Correction de l'extension de smarty dans l'install
+	* Ajout du système pour ajouter du texte dans les catégories et sous catégories catalogue.
+	* Début de la séparation des fichiers javascript suivant les modules.
+	* Fix bug d'affichage de l'édition des GoogleTools
+	* Répartition des fonctions ou scripts javascripts suivant le module (backend)
+	* Fix bug du menu déroulant pour la liaison des produits (backend)
+	* Fix bug suppression de produits avec liaisons
+	* Suppression du moteur de recherche cms simple par une version ajax plus complète (backend)
+	* Suppression du moteur de recherche catalogue simple par une version ajax plus complète (backend)
+	
+stable 2.3.42
+	* Fix bug menu déroulant des catégories dans l'admin
+	* Modification de l'instance de base de donnée dans le plugin contact
+	* Fix bug htaccess pour les news (undefined)
+	* Suppression de la condition pour le teste de php5.3, prise en charge fonctionnelle
+	* Fix bug du menu treeview du catalogue
+	* Redéfinition des requêtes pour la construction du menu treeview catalogue.
+	* Ajout des styles du menu treeview pour les pages active
+	* Ajout du plugin youtube dans tinyMCE
+	* Ajout de la classe pour la gestion des entête HTTP dans magixglobal
+	* Modification des entêtes json dans le catalogue, CMS avec la nouvelle classe header
+	* Fix bug de la mise en cache des fichiers json et php via le htaccess
+	* Ajout de popupinline dans tinymce
+	* Fix bug affichage du plugin youtube (prise en charge des caractères accentuer)
+	* Update jquery form 2.49 => 2.52
+	
+stable 2.3.41
+	* Upgrade de pdw file browser 1.3 dans tinymce et ckeditor
+	* Upgrade smarty 3.0.1 => 3.0.5 stable
+	* Fix bug smarty extends chemin relatif de la classe smarty 3
+	* Fix bug chemin vers le dossier des plugins (// a la place de /)
+	* Remplacement de $_SERVER['DOCUMENT_ROOT'] dans le chemin des plugins
+	* Fix bug $smarty->trigger_error(), suppression de la fonction.
+	* Ajout de méthode pour manipuler smarty 3 avec l'API (frontend et backend)
+	* Update minify avec la dernière version du svn (r429)
+	* Ajoute la fonction db_install_table pour l'installation automatique des tables SQL du plugin
+	* Ajout du widget widget_prelude_lang pour afficher les langues du site internet disponible.
+	* Ajout de la traduction des liens du menu horizontal dans le template "default".
+	* Ajout de la langue dans la liste des catégories, sous catégories du catalogue, catégories CMS
+	* Upgrade jQuery 1.4.3 => 1.4.4 (voir le changelog de jQuery)
+	* Upgrade jQuery UI 1.8.5 => 1.8.6 (voir le changelog de jQuery UI)
+	* Suppression de toutes les variables &$smarty
+	* Modification du menu vertical du catalog, ajout d'un menu style explorer
+	
+Stable 2.3.40
+	* Modification du système de sitemap 
+		=> Ajout de la création du sitemap google images
+		=> Ajout du sitemap index pour la relation avec les sitemaps enfants
+		=> Le sitemap des URLS devient sitemap-url.xml
+	* Ajout des dates de publication dans les pages CMS + produits du catalogue
+	* Upgrade minify 2.1.3 => 2.1.4 beta
+		- Nouvelle configuration sans $_SERVER['DOCUMENT_ROOT']
+		- Aucune limite du nombre de fichier js, css dans minify
+	* Modification pour la création du fichier de configuration (config.php) avec l'assistant d'installation
+		=> Ecriture en dur du chemin vers les logs
+	* Fix bug dans la création du fichier LOG pour les requêtes
+	* Nouvelle installation des tables mysql via fichier db.sql
+	* Modification graphique (h1,p,...) dans le système d'installation
+	* Correction des chemins dans le système d'installation en utilisant magixglobal
+	* Correction des requête ajax dans l'assistant d'installation
+	* Suppression du fichiers install.php => remplacement par config.php
+	* ajout de fonctions pour installer des tables mysql
+	* Remplacement du système d'installation actuel des tables mysql avec les nouvelles fonctions
+	* Fix bug chemin des plugins dans l'administration
+	* Intégration du système d'installation des tables mysql dans les plugins
+	* Ajout du système de notification d'installation des tables MYSQL d'un plugin
+	* Ajout du système de déplacement des pages CMS
+	* Ajout du système de déplacement des fiches catalogue
+	* Ajout du système de copie des fiches catalogue
+	* Ajout de la fenêtre modal pour les liens des pages CMS
+	* Ajout du moteur de recherche des fiches catalogue (version simple)
+	* Ajout des fichiers admin pour le plugin contact (insertion des membres pour la reception des emails)
+	* Upgrade tinyMCE 3.3.9 => 3.3.9.2  (Voir le changelog sur moxicode)
+	* Remplacement de imagemanager (tinymce) par pdw_file_browser (avec possibilité d'une réinsertion de imagemanager)
+	* Ajout du système pour choisir son éditeur wysiwyg (tinymce ou ckeditor)
+	* Ajout et configuration de ckeditor 3.4.1
+	* Ajout de pdw_file_browser dans ckeditor comme gestionnaire de fichiers par défaut
+	* Upgrade jQuery 1.4.2 => 1.4.3 (voir le changelog de jQuery)
+	* Upgrade de compatibilité avec jquery 1.4.3 pour colorbox (version 1.3.9 => 1.3.10)
+	* Ajout de mc_editor_config.js pour charger la configuration des éditeurs
+	* Ajout des licences GPL 3 et MIT dans tous les fichiers
+	* Déplacement des fichiers ad-globaljs.js et dashboard dans le dossier backend
+	* Ajout de séparation frontend dans des fichiers spécifique.
+	* Refonte du thème par défaut (adaptation par Samuel L.)
+	* Ajout de la réécriture d'url des news dans la classe rewrite (méthode: filter_news_root_url,filter_news_url)
+
+Stable 2.3.39
+	* Création de l'ajout des produits dans une catégorie et sous catégorie
+		=> Affiche la liste dans l'édition du produit
+		=> Ajoute un produit dans les catégories et sous catégories
+		=> Suppression de produits dans les catégories et sous catégories
+	* Création de l'ajout d'une liaison d'un produit
+		=> Affiche la liste des liaisons dans l'édition du produit
+		=> Ajoute une liaison de produits
+		=> Suppression de la liaison de produits
+	* Ajout de la réécriture d'url des produits dans la classe rewrite (méthode filter_catalog_product_url)
+	* Modification des urls CMS + produits catalogue dans le système de sitemap xml
+	* Préparation du mode édition des templates
+	* Fix bug IE7 sur le sélecteur de templates (backend)
+	* Création du système de relation de produits dans les fiches (frontend)
+	* Ajout d'un menu tabs dans les fiches produits pour améliorer l'ergonomie et le contenu
+	* Fix bug avec la réécriture des métas => Impossible d'afficher une catégorie dans le title, description de la sous catégorie
+	* Correction des requêtes sql des widgets du catalogue(frontend)
+	* Ajout des fonctions de réécriture des urls dans les widgets du catalogue (frontend)
+	* Fix bug avec la requête ajax pour l'ajout d'un produit lié (backend)
+	* Ajout du système des images de catégories et sous catégories (backend)
+	* Suppression du dossier backend dans js
+	* Ajout du dossier tools dans js pour les outils spécifiques.
+	* Fix bug pour la création du sitemap xml => URL incorrect + Impossible de créer le fichier (corriger les plugins en conséquence)
+	* Upgrade jquery UI 1.8.4 => 1.8.5 + Upgrade thème dark backend 1.8.5
+	* Mise à jour tinyMCE 3.3.8 => 3.3.9
+	* Upgrade magixcjquery 3.0 => 3.1
+	* Ajout des licences Open source GPL3 + MIT
+	
+Stable 2.3.38
+	* Ajout de la soumission ajax avec notification
+		=> Ajouter une page CMS
+		=> Edition d'une page CMS
+		=> Ajout d'un produit dans le catalogue
+		=> Edition d'un produit dans le catalogue
+		=> Ajouter une réécriture des métas
+		=> Edition d'une reecriture des métas
+		=> Changement de template
+		=> Ajout d'une page d'accueil
+		=> Edition d'une page d'accueil
+		=> Ajout d'une news
+		=> Editer une news
+	* Création de fichiers d'exécution pour chaque module indépendant (dossier admin)
+		=> catalog.php
+		=> cms.php
+		=> config.php
+		=> dashboard.php
+		=> googletools.php
+		=> home.php
+		=> lang.php
+		=> news.php
+		=> plugins.php
+		=> sitemap.php
+		=> templates.php
+		=> users.php
+	* Multiplication de la vitesse par 5 pour l'upload des images catalogue, images micro galerie (Ecriture plus rapide)
+	
+Stable 2.3.37
+	* Initialisation de magixglobal sur l'ensemble du logiciel
+	* Suppression des variables globales $_SERVER['DOCUMENT_ROOT'] sur l'ensemble de l'installation pour permettre l'utilisation de localhost
+		=> Reecriture des chemins
+	* Ajout des licences open source dans deux fichiers ainsi qu'une entête dans chaque fichiers
+	* Création de la fonction base_path() dans la classe magixglobal_model_system pour la racine de l'installation
+	* Ajout de ajax notification pour le remplacement des messages de retour classique
+	
+Stable 2.3.36
+	* Suppression du plugin smarty notify_header
+	* Ajout de la fonction smarty notify_dir_header en remplacement de notify_header
+	* Ajout de la fonction smarty header_notify pour les notifications utilisateurs (en cours de développement)
+	
+Stable 2.3.35
+	* Création du dossier pour les classes globales (magixglobal)
+	* Ajout de la classe system.php dans le dossier magixglobal pour les fonctions propre au système tel que la définition des chemins absolu
+	* Ajout de la classe rewrite.php dans le dossier magixglobal pour les fonctions propre à la réécriture des urls admin et public 
+	* Upgrade de colorbox de 1.3.6 => 1.3.9 avec modification des thèmes disponible
+	
+Stable 2.3.34
+	* Mise à jour tinyMCE 3.3.7 => 3.3.8
+	* Fix bug absolute url avec le domaine associer remplacer par / (tinyMCE)
+		- Suppression de document_base_url
+		- Suppression de remove_script_host
+		- Ajout de elements (absurls)
+	* Suppression de jQuery ui checkbox alexander.farkas pour les thèmes public
+		- Remplacement par jQuery UI checkbox officiel 1.8.1 avec adaptation à Magix CMS
+	* Correction du chemin des fichiers (js,css) dans le thème par défaut de Magix CMS
+	* Upgrade smarty 3 => RC3
+	* Mise à jour de jquery ui 1.8.2=>1.8.4 
+	* Upgrade du thème jquery UI 1.8.4
+	* Suppression du .html pour les plugins dans le htaccess
+	
+Stable 2.3.33
+	* Upgrade jQuery UI 1.7.2 => 1.8.2 dans l'ensemble de l'installation
+		- Upgrade du thème de l'admin + Fix bug affichage menu accordion
+	* Upgrade jquery UI selectmenu (compatibilité jquery ui 1.8.2)
+	* Remplacement jQuery ui checkbox 0.1 (Jeremy Lea) => vers version alexander.farkas 1.4 (compatibilité jquery ui 1.8.2)
+	* Upgrade jquery ui spinner 1.0 => 1.2 (compatibilité jquery ui 1.8.2)
+	* Fix bug espacement bouton radio (controller cms) du système de construction de la sidebar
+	
+Stable 2.3.32
+	* Fix bug chargement des images de catégorie dans le catalogue
+	* Modification de l'ordre d'affichage des produits dans la partie public
+	* Fix bug requête invalid après suppression d'une image dans la micro galerie
+	* Correction orthographique dans la validation du plugin contact
+	* Ajout du système pour afficher un template avec fetch dans les plugins
+	* Correction de la longueur des champs de base de données (varchar) lors de l'installation (catalogue et cms)
+	* Ajout du plugin jquery jfirebug
+	* Ajout du compteur style twitter pour les métas static
+	* Upgrade tinyMCE jQuery 3.3.6 => 3.3.7
+	
+Stable 2.3.31
+	* Suppression du système de licence pour compatibilité encodeur.
+	* Ajout du plugin contact dans les plugins par défaut.
+	* Suppression des fichiers non utilisé 
+		- dossier js dans app/backend
+		- dossier js dans app/frontend
+		- dossier plugins dans app/backend
+		- dossier plugins dans app/frontend
+		- jquery tipsy
+	
+Stable 2.3.3
+	* Modification des URLS pour les pages CMS
+		- Ajout de l'identifiant numérique de la page
+		- Ajout de l'identifiant numérique de la catégorie
+		- Correction du htaccess pour la nouvelle règle des pages CMS
+	* Ajout de la prévisualisation à partir des liens en plus de la loupe dans l'administration
+	* Ajout du système pour l'encodage de la licence (install)
+		- Ajout de la notification des chmods pour le dossier app/config (création du fichier config.php) 
+	* Correction du système de sitemap pour inclure les pages CMS avec la nouvelle règle de réécriture
+	* Ajout du système de ping du sitemap avec choix de la compression
+		- Aucune compression
+		- Compression GZ
+	* Patch valide url dans magix cjquery (utilisation regex à la place de filter_var bug php 5.2.13)
+	* Modification des widgets par défaut
+		- widget_simple_sidebar_cms => Correction des URL avec la nouvelle règle de réécriture.
+	* Correction du système de sitemap pour les plugins
+		- Suppression de la table des sitemaps supplémetaire 
+		- Remplacement par un scanne de dossier et analyse de la fonction createSitemap
+	* Fix bug de la portée des fonctions de la classe sitemap + plugins
+	* Suppression de la table sitemap dans l'installation de magix cms
+	
+Stable 2.3.2
+	* Fix bug notification pour le dossier installation (CSS, positionnement) 
+	* Fix bug sitemap, validation des urls (en cours)
+	* Ajout de la notification de sécurité pour le dossier install (côté admin)
+	* Suppression de meerkat dans le chargement automatique (voir getScript)
+	* Ajout du slider dans l'installation 
+	* modification système réécriture url
+	* Modification du module réécriture des métas dans l'administration (suite) => Correction du formulaire pour l'édition. 
+	* Adaptation du plugin smarty de reecriture des métas du catalogue (public) 
+	* Fix bug url des images dynamique du catalogue (catégories, sous catégories, produits)
+	* Fix bug avec la fonction d'insertion de variable dans le module SEO.
+	* Fix Bug affichage de la liste des news (Ajout de style)
+	* Modification réécriture des métas côté public (catalog,news)
+	* Suppression du menu déroulant dynamique pour le choix de la réécriture des métas
+	
+Stable 2.3.1
+	* Suppression des langages de programmation inutilisé dans insertcode (tinyMCE)
+	* Ajout du plugin lorem ipsum dans tinyMCE
+	* Ajout de la langue française dans le plugin lorem ipsum (tinyMCE)
+	* Modification du fichier de configuration tinyMCE
+	* Réinsertion du plugin tablextras(tinyMCE)
+	* Modification du système de thèmes => suppression du dossier public et transfert vers le dossier du thème
+	* Modification du changelog pour la version stable 2.3.1
+	* Modification du fichier xml de la version courante 
+	* Modification du système de plugin partie administration
+		 - Prise en charge du nom suivant le paramètre get
+         - Suppression de la sélection DB pour le nom du plugin => remplacement par système de fichier
+	* Ajout du système de plugin pour la partie public
+	* Modification du renseignement des plugins dans l'auto enregistrement
+	     -  Instance automatique du plugin.
+		  - Enrichissement de la syntaxe et des fonctions utilisateurs pour la création de plugins.
+	* Correction dans le htaccess pour la prise en charge et réécriture automatique des plugins enregistré
+	* Correction de la prise en charge du javascript dans les plugins partie administration.
+	* Ajout du système d'icônes pour les plugins (icons perso)
+	
+Stable 2.3.0
+	* Ajout de la réécriture automatique des images dans le catalogue.
+	* Ajout de la réécriture automatique des images dans les galeries du catalogue.
+	* Mise à jour de tinyMCE 3.3.3 => 3.3.5.1
+	* Correction orthographique dans divers fichiers.
+	* Modification du dashboard (licence, boutons)
+	* Ajout icon cart dans sprite administration
+	* Ajout de la licence dans la configuration principale
+	
+beta 2.2.29
+	* Intégration du système de template dynamique pour la partie admin des plugins
+	* Ajout de la fonction addTemplates
+	* Déplacement des skins des plugins admin dans le dossier de son propre plugin
+	* Modification du système de plugin avec autochargement des classes du dossier "plugins"
+	* Suppression des règles de réécriture d'url dans l'administration (tous les fichiers)
+	
+beta 2.2.28
+	* Modification requête SQL pour l'ordre des catégories CMS
+	* Suppression de la réécriture des URLS dans l'administration (Changement important!!!!)
+	      - Modification du fil d'Ariane dans l'administration
+	      - Correction des URLS pour les requête ajax dans le fichier JS global
+	      - Changement des liens dans le footer de l'administration.
+	      - Ajout d'un favicon.ico et favicon.png dans l'administration
+		Note : Les modules modifiés
+			     - utilisateurs
+			     - Langues
+			     - Configuration
+			     - Thémes
+			     - CMS
+	
+beta 2.2.27
+	* Upgrade tinymce 3.3.1 => 3.3.3
+	* Fix bug affichage du menu déroulant sous Google Chrome
+	* Fix bug affichage formulaire (fieldset) sous Google Chrome
+	* Renforcement des sessions utilisateurs (sécurité)
+	
+beta 2.2.26
+	* Ajout de la colorisation syntaxique dans tinyMCE (rj_insert_code)
+	* Correction de l'entête des pages du système de plugins
+	* Correction du paramètre pour la page contact
+	* Correction du chargement des fichiers javascript des plugins dans l'administration.
+	* Ajout de la règle pour un système d'importation dans les plugins
+	
+beta 2.2.25
+	* Installation des tables (install suite)
+	* Modification des requêtes SQL pour la création des tables SQL
+	* Ajout de la création de l'utilisateur final (super admin)
+	
+beta 2.2.24
+	* Début de l'écriture du module d'installation
+    	- Implémentation des tests sur la configuration système
+    	- Début de l'écriture du fichier de configuration (config.php)
+    * Ajout de la création * Création de exec(controller,db,config) dans le dossier installation
+	* Création des fichiers css, images, js pour l'auto installation
+	* Ajout processus d'analyse de la configuration
+	* Ajout création fichier de configuration global
+	* Début de la création automatique des tables SQL
+	
+beta 2.2.23
+	* Mise à jour jquery validate 1.5 => 1.7
+	* Attribution de numéro de version jquery validate password (1.0)
+	* Fix bug frontend/model/mail mail->from and mail->fromName => ajout de la fonction extract_domain() dans la classe
+	* Fix bug frontend/model/mail select_mail_user() retourne une erreur si aucun membre.
+	* Correction thème par défaut
+	    - screenshot.png
+	    - Modification de la sidebar pour positionner les flottants
+	    - Correction de la couleur des éléments du menu sidebar (animation javascript)
+	    
+beta 2.2.22
+	* Upgrade imagemanager 3.1.2.2 (tinymce)
+	* Upgrade tinymce 3.3 => 3.3.1 
+	* Changement dans la configuration de tinymce (config-tinymce.js)
+	* Upgrade jquery form 2.40 => 2.43 
+	* Modification dans la minification admin et public pour chargé jquery form 2.43
+	* Correction dans block_cms pour être compatible avec les nouvelles requête SQL CMS (sans prise en charge des langues)
+	
+Beta 2.2.21
+	* Fix bug sidebar accordéon dans l'administration (prise en charge cookie) 
+	* Fix bug affichage sidebar
+	* Correction multiple + ajout dans le javascript global de l'administration
+	* Fix bug bordure pour les checkbox (administration)
+	* Modification choix des langues dans l'administration(menu select/champs texte)
+	* Suppression du dossier de tinymce avant upgrade
+	* Upgrade tinyMCE 3.3b2 vers la version 3.3 stable (Fix bug table et cellule IE8,Fix bug crash chrome 4) 
+		- Suppression de tinyMCE 3.3b2 
+		- Ajout de tinyMCE 3.3 stable 
+	* Correction (mineur) dans le fichier min/admin pour tinyMCE 3.3
+	* Correction (mineur) des widgets pour un affichage plus complet 
+		- Déplacement de l'utilisateur 
+		- Caractères supplémentaires pour le titre du catalogue, titre de la page CMS, titre page d'acceuil.
+	* Création de l'édition des catégories et sous catégories dans l'administration du catalogue 
+	* Correction des liens CSS dans les thèmes colorbox 
+	* Ajout d'un nouveaux thème dans colorbox(colorbox-lightbox) 
+	* Correction du type de soumission d'une nouvelle catégorie, sous catégorie (remplacement par post ajax) 
+	* Suppression de de la requête de contrôle de version (suppression comparatif)
+	* Création de la mise à jour des catégories dans la partie CMS
+	* Création de la suppression des catégories dans la partie CMS
+	
+Beta 2.2.20
+	* Suppression de backend/controller/googletools.php
+	* Ajout du setting global (backend/controller/setting.php) + paramètres google tools
+	* Ajout manipulation table setting (backend/db/setting.php)
+	* Correction du widget widget_googletools
+	* Modification du formulaire des outils google dans l'administration
+	     - Envoi via requête ajax (voir globaljs)
+	     - Séparation des deux champs dans différents formulaire
+	* Mise à jour de jquery form 2.33 => 2.40
+	* Correction du fichier public, admin dans minify
+	* Fix bug nettoyage des sessions dans la base de donnée
+	* Fix Bug critique session permanente avec risque de vol de session
+	    - Correctif appliqué avec condition supplémentaire de style différentiel session => db
+
+Beta 2.2.19
+	* Mise à jour TinyMCE imagemanager plugin 3.1.2
+	* Modification dans la configuration de tinyMCE
+	* Fix bug compilation après lecture fichier .conf (langues)
+	* Correction et ajout de nouvelles icônes dans le sprite magix	
+	* Fix bug requete public auto construction de menu dynamique (modification en cours)
+	* Séparation intelligente de la minification (admin, public)
+	
+Beta 2.2.18
+	* Modification de l'interface de login (ajout du logo + changement de taille)
+	* Modification de l'interface d'administration (nouvelles icônes)
+	* Suppression des langues  dans l'administration avec structure de contrôle des pages présente
+	
+Beta 2.2.17
+	##### Framework ####
+	* Upgrade tinyMCE version 3.3b2 + plugins basic + plugins supplémentaire (imagemanager,filemanager,tableextra)
+	
+2.2.1 RC3
+	* Correction modification ou changement de thème (ajax request)
+	* Ajout du plugin immoSoldState (Produit vendu)
+	* Correction du chargement ajax des menus déroulant (catalogue)
+	* Correction de l'affichage des plugins dans l'administration (conditions supplémentaires)
+	* Correction de l'affichage des thèmes dans l'administration (conditions supplémentaires)
+	
+2.2.1 RC2
+	* Modification de la minification (gain de pourcentage)
+	* Création du système micro galerie dans le catalogue
+	* Modification de la création des minatures (hierarchie analyser)
+	* Refonte de la hierarchie global ainsi que le système de plugin
+	* Ajout des widgets public
+	* Correction du système de sitemap + création RSS (écriture incorrect dans les fichiers XML)
+	* Mise à jour de smarty 3 beta 7
+	* Mise à jour de phpthumb (correction mineure)
+	
+Beta 2.1.9
+	* Création du système de plugins
+	* Création du système de skin
+	* Correction majeure dans le système de version (lecture XML incorrect)
+	* Création du systéme RSS pour les news
+	* Ajout du balisage dynamique (header)
+	* Mise à jour de smarty 3 beta 6
+	* Ajout de la mise à jour des utilisateurs + Changement de permissions
+	
+Beta 2.1.8
+	* Correction bug majeure dans la création des miniatures (catalogue)
+	* Installation de imagemanager dans tinymce
+	* Ajout des métas statique
+	* Correction de la réécriture des métas (nouveaux paramètres)
+
+Beta 2.1.7
+	* Initialisation de la réécriture des métas 
+	* Système dynamique de balisage pour les métas

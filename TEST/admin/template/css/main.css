@@ -1,0 +1,349 @@
+/* Dashboard */
+.module-dashboard h4{
+    font-size: 14.5px;
+}
+
+/*
+* FORMS
+*/
+.input-btn{
+    margin-top: 15px;
+}
+.input-inline-btn{
+    margin-left: 15px;
+}
+/*
+* UI Spinner
+*/
+.ui-spinner {
+    position:relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    vertical-align: middle;
+}
+.ui-spinner{
+    position: relative;
+    height: 32px;
+    /*top: -9px;
+    left: -9px;*/
+    margin:3px 0;
+}
+.ie8 .ui-spinner {
+    top: -4px;
+}
+.ui-spinner-button {
+    width: 16px;
+    min-height:10px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    cursor: default;
+    display: block;
+    overflow: hidden;
+    right: 0;
+}
+.ui-spinner a.ui-spinner-button {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+} /* more specificity required here to overide default borders */
+.ui-spinner .ui-icon {
+    position: absolute;
+    margin-top: -8px;
+    top: 50%;
+    left: 0;
+} /* vertical centre icon */
+.ui-spinner-up { top: 0; max-height:16px;}
+.ui-spinner-down { bottom: 0; max-height:16px; top: 16px;}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+    /* need to fix icons sprite */
+    background-position:-65px -16px;
+}
+input[type='text'].ui-spinner-input {
+    border: none;
+}
+/* Badge et label */
+a:hover > .label,
+a:hover > .badge {
+    background-color: #000000;
+}
+/**
+* LOGIN
+*/
+.box-login {
+    max-width: 300px;
+    margin: 3% auto;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to top, #E6E6E6, #FFFFFF);
+    background-repeat: repeat-x;
+    border-color: #e5e5e5 #e5e5e5 #BBBBBB;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+.box-login h2{
+    background-color: #1B1B1B;
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    background-repeat: repeat-x;
+    border-color: #252525;
+}
+.box-login .alert{
+    margin-bottom: 0;
+}
+.box-login #forms-log{
+    margin: 0;
+    padding: 10px 25px 10px;
+}
+#forms-log .input-prepend{
+    margin-bottom:15px;
+}
+/*
+* ==== FOOTER
+*/
+
+.navbar-static-bottom {
+    position: static;
+    margin-top:20px;
+    margin-bottom: 0;
+}
+.navbar-static-bottom .navbar-inner {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-width: 1px 0 1px;
+}
+/**
+ ===== SIDEBAR
+*/
+
+.nav-header {
+    font-size:14px;
+}
+#admin-language{
+    margin-right:5px;
+}
+#sidebar .nav-flag {
+    margin: 5px 0;
+}
+#sidebar > .nav > li > a{
+    /*padding: 4px 15px;*/
+}
+/*
+* lang-group
+*/
+.lang-group {
+    margin-left: 15px;
+}
+.lang-group a:first-child{
+    margin-left: 0;
+}
+.lang-group a{
+    margin-left: 5px;
+}
+.lang-group > a:hover,
+.lang-group > .active {
+    background-color: #3A87AD;
+}
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+}
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}*/
+.dropdown .dropdown-menu .nav-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/**
+ ====    loader
+*/
+.loader > img{
+    margin-top: 20px;
+}
+
+.btn-loader > img{
+    margin-top: 0;
+}
+
+.hide-modal {
+    display: none;
+}
+
+#graphPages{
+    max-height: 300px;
+}
+/*
+* UI Sortable
+*/
+tbody.ui-sortable{}
+tbody.ui-sortable > .ui-sortable-helper{
+    width: 100%;
+}
+/**
+* PREVIEW Fancybox
+*/
+.post-preview{
+    font-size: 28.5px;
+    padding-bottom: 6px;
+    font-weight: lighter;
+}
+/**
+* ===== Thumbails Theming
+**/
+#theming .thumbnail img{
+    margin-top:5px;
+}
+/*
+* jmShowIt
+*/
+/* metas */
+.view-metas,
+.view-block{
+    margin-top:10px;
+}
+
+.showit.open > .fa-plus:before,
+.view-block.open > .fa-plus:before,
+.view-metas.open > .fa-plus:before{
+    content:"\f068";
+}
+/* Colleft */
+.showit.open > .fa-plus-square-o:before,
+.view-block.open > .fa-plus-square-o:before,
+.view-metas.open > .fa-plus-square-o:before{
+    content:"\f147";
+}
+.collapse-item,
+.collapse-block,
+.collapse-metas{
+    display:none;
+    margin-bottom: 5px;
+}
+.collapse-item.on,
+.collapse-block.on,
+.collapse-metas.on{
+    display:block;
+}
+/*
+* Plugins
+*/
+.block-row{
+    margin:5px 0;
+}
+/*
+* List image
+*/
+.list-picture{
+    margin: 20px 0;
+}
+.list-picture li{
+    margin:0 0 0 5px;
+    text-align:center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 4px;
+    height: 120px;
+}
+.list-picture li:hover{
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
+    background-image: linear-gradient(to top, #E6E6E6, #FFFFFF);
+    background-repeat: repeat-x;
+    border-color: #e5e5e5 #e5e5e5 #BBBBBB;
+    cursor: pointer;
+}
+.list-picture > li > .block-remove{
+    position:absolute;
+}
+.list-picture > li > img{
+    max-height:120px;
+}
+/*
+* UI Autocomplete
+* disposition en tableau des listes avec autocomplete
+*/
+ul.autocomplete-list-row{
+    width: 350px;
+}
+ul.autocomplete-list-row li > a{
+    cursor: pointer;
+}
+ul.autocomplete-list-row li{
+    content : "";
+    display:table;
+    line-height: 0;
+}
+ul.autocomplete-list-row li span{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.forms-config .ui-spinner {
+    max-width: 100px;
+}
+
+.forms-config > .well > h3,
+.forms-config > .well > h4{
+    margin: 5px 0;
+}
+
+/* Article
+*****/
+#article > h1:first-child {
+    margin-top: 0;
+}
+
+#article form{
+    margin: 5px 0;
+}
+
+/* Extend Bootstrap
+****************/
+.img-responsive {
+    margin: 0 auto;
+}
+/* Message Alert */
+.alert{
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mc-error{
+    margin-top: 5px;
+}
+
+/* Forms */
+.form-group label{
+    margin-top: 5px;
+}
+/* Margin top for container table and button */
+.table-row,
+.btn-row{
+    margin-top: 10px;
+}
+/* Editor */
+.mceEditor{
+    min-height: 200px
+}
+div.mce-fullscreen{
+    top:60px;
+    z-index: 1000;
+}
+/* input search icon position */
+.form-control-feedback{
+    line-height: 34px;
+}
